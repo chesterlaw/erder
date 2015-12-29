@@ -1,0 +1,10 @@
+.a.box {
+  .horizontal-stroke {
+    height: $stroke-width;
+    width: 100%;
+    background: $stroke-color;
+    position: absolute;
+    top: 50%;
+    margin-top: -$stroke-width/2;
+  }
+}
