@@ -1,4 +1,56 @@
 Rails.application.routes.draw do
+  get 'index/a'
+
+  get 'index/b'
+
+  get 'index/c'
+
+  get 'index/d'
+
+  get 'index/e'
+
+  get 'index/f'
+
+  get 'index/g'
+
+  get 'index/h'
+
+  get 'index/i'
+
+  get 'index/j'
+
+  get 'index/k'
+
+  get 'index/l'
+
+  get 'index/m'
+
+  get 'index/n'
+
+  get 'index/o'
+
+  get 'index/p'
+
+  get 'index/q'
+
+  get 'index/r'
+
+  get 'index/s'
+
+  get 'index/t'
+
+  get 'index/u'
+
+  get 'index/v'
+
+  get 'index/w'
+
+  get 'index/x'
+
+  get 'index/y'
+
+  get 'index/z'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
