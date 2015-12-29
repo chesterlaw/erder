@@ -11,12 +11,17 @@ div, body {
   box-sizing: border-box;
 }
 
+.wrapper {
+  margin: 5rem auto;
+  width: $grid-width;
+}
+
 .grid {
   position: absolute;
   width: $grid-width;
 }
 
-.box {
+.character {
   width: $grid-width;
   height: $grid-width;
   border: 1px solid black;

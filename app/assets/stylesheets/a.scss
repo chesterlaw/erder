@@ -1,4 +1,4 @@
-.a.box {
+.a.character {
   .horizontal-stroke {
     height: $stroke-width;
     width: 100%;
@@ -6,5 +6,11 @@
     position: absolute;
     top: 50%;
     margin-top: -$stroke-width/2;
+  }
+
+  .left-diagonal-stroke {
+    width: $stroke-width;
+    height: 100%;
+    background: $stroke-color;
   }
 }
