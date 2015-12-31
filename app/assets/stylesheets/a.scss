@@ -9,8 +9,27 @@
   }
 
   .left-diagonal-stroke {
+    position: absolute;
+    $extra-height: 30%;
     width: $stroke-width;
-    height: 100%;
+    height: 100% + $extra-height;
     background: $stroke-color;
+    margin-top: -$extra-height/2;
+    margin-left: -$stroke-width/2 + $grid-width/4;
+    transform: rotate(26.5218463deg);
+    transform-origin: 50% 50%;
   }
+
+  .right-diagonal-stroke {
+    position: absolute;
+    $extra-height: 30%;
+    width: $stroke-width;
+    height: 100% + $extra-height;
+    background: $stroke-color;
+    margin-top: -$extra-height/2;
+    transform: rotate(-26.5218463deg);
+    transform-origin: 50% 50%;
+    right: 0;
+    margin-right: -$stroke-width/2 + $grid-width/4;
+  }  
 }
