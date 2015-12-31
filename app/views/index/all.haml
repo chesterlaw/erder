@@ -1,3 +1,4 @@
 .all
   - ("a".."z").each do |letter|
-    = render :file => "index/#{letter}"
+    = link_to letter do
+      = render :file => "index/#{letter}"
