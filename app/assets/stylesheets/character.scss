@@ -1,48 +1,48 @@
 // Horizontal strokes
-.character__stroke--horizontal {
+.stroke--horizontal {
   height: $stroke-width;
   width: $grid-width + $stroke-width;
   position: absolute;
   left: -$stroke-width/2;
 }
 
-.character__stroke--horizontal--top {
+.stroke--horizontal--top {
   top: -$stroke-width/2;
 }
 
-.character__stroke--horizontal--middle {
+.stroke--horizontal--middle {
   top: 50%;
   margin-top: -$stroke-width/2;
 }
 
-.character__stroke--horizontal--bottom {
+.stroke--horizontal--bottom {
   bottom: 0;
   margin-bottom: -$stroke-width/2;
 }
 
 // Vertical strokes
-.character__stroke--vertical {
+.stroke--vertical {
   height: $grid-width + $stroke-width;
   width: $stroke-width;
   position: absolute;
   top: -$stroke-width/2;
 }
 
-.character__stroke--vertical--left {
+.stroke--vertical--left {
   left: -$stroke-width/2;
 }
 
-.character__stroke--vertical--middle {
+.stroke--vertical--middle {
   left: 50%;
   margin-left: -$stroke-width/2;
 }
 
-.character__stroke--vertical--right {
+.stroke--vertical--right {
   right: 0;
   margin-right: -$stroke-width/2;
 }
 
-.character__stroke--vertical--bottom-middle {
+.stroke--vertical--bottom-middle {
   margin-left: -$stroke-width/2;
   height: $grid-width/2 + $stroke-width;
   left: 50%;
@@ -50,30 +50,30 @@
   margin-top: -$stroke-width/2;
 }
 
-.character__stroke--quadrant-border {
+.stroke--quadrant-border {
   position: absolute;
   width: $stroke-width;
 }
 
-.character__stroke--quadrant-border--q1-right {
+.stroke--quadrant-border--q1-right {
   height: $grid-width/2 + $stroke-width/2;
   top: -$stroke-width/2;
   right: -$stroke-width/2;
 }
 
-.character__stroke--quadrant-border--q2-top {
+.stroke--quadrant-border--q2-top {
   height: $stroke-width;
   top: -$stroke-width/2;
   width: $grid-width/2;
 }
 
-.character__stroke--quadrant-border--q2-bottom {
+.stroke--quadrant-border--q2-bottom {
   height: $stroke-width;
   top: $grid-width/2 - $stroke-width/2;
   width: $grid-width/2;
 }
 
-.character__stroke--quadrant-border--q3-bottom {
+.stroke--quadrant-border--q3-bottom {
   height: $stroke-width;
   bottom: -$stroke-width/2;
   width: $grid-width/2;

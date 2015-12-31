@@ -1,7 +1,7 @@
 // Circle element
 $stroke-width-ratio: $stroke-width/$grid-width;
 
-.character__stroke.character__stroke--circle {
+.stroke.stroke--circle {
   $ratio: 1 + $stroke-width-ratio;
   $width: $grid-width * $ratio;
   width: $width;

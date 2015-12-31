@@ -1,5 +1,5 @@
 .a.character {
-  .horizontal.character__stroke {
+  .horizontal.stroke {
     height: $stroke-width;
     width: 100%;
     position: absolute;
@@ -7,7 +7,7 @@
     margin-top: -$stroke-width/2;
   }
 
-  .diagonal.character__stroke {
+  .diagonal.stroke {
     position: absolute;
     $extra-height: 30%;
     width: $stroke-width;
@@ -17,12 +17,12 @@
   }
 
 
-  .left.diagonal.character__stroke {
+  .left.diagonal.stroke {
     margin-left: -$stroke-width/2 + $grid-width/4;
     transform: rotate(26.5218463deg);
   }
 
-  .right.diagonal.character__stroke {
+  .right.diagonal.stroke {
     margin-right: -$stroke-width/2 + $grid-width/4;
     transform: rotate(-26.5218463deg);
     right: 0;

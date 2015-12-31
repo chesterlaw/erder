@@ -1,7 +1,7 @@
 .c.character {
   $stroke-width-ratio: $stroke-width/$grid-width;
 
-  .circle.character__stroke {
+  .circle.stroke {
     $ratio: 1 + $stroke-width-ratio;
     $width: $grid-width * $ratio;
     width: $width;
@@ -27,18 +27,18 @@
     margin-top: -$width/2;
   }
 
-  .horizontal.character__stroke {
+  .horizontal.stroke {
     width: $grid-width/2 + $stroke-width/2;
     height: $stroke-width;
     position: absolute;
     margin-left: $grid-width/2;
   }
 
-  .top.horizontal.character__stroke {
+  .top.horizontal.stroke {
     top: -$stroke-width/2;
   }
 
-  .bottom.horizontal.character__stroke {
+  .bottom.horizontal.stroke {
     bottom: -$stroke-width/2;
   }
 

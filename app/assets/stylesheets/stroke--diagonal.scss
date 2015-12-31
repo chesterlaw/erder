@@ -1,6 +1,6 @@
 $pythagorean-ratio: 0.41;
 
-.character__stroke--diagonal {
+.stroke--diagonal {
   $height: ($grid-width/2)*(1+$pythagorean-ratio) + $stroke-width;
   height: $height;
   width: $stroke-width;
@@ -9,12 +9,12 @@ $pythagorean-ratio: 0.41;
   margin-top: -($stroke-width + ($grid-width/2)*($pythagorean-ratio))/2;  
 }
 
-.character__stroke--diagonal--q1-to-bottom-left {
+.stroke--diagonal--q1-to-bottom-left {
   right: -$stroke-width/2 + $grid-width/4;
   transform: rotate(45deg);
 }
 
-.character__stroke--diagonal--q2-to-bottom-right {
+.stroke--diagonal--q2-to-bottom-right {
   left: -$stroke-width/2 + $grid-width/4;
   transform: rotate(-45deg);
 }
