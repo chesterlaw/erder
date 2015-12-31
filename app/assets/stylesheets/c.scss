@@ -28,7 +28,7 @@
   }
 
   .horizontal.character__stroke {
-    width: $grid-width/2;
+    width: $grid-width/2 + $stroke-width/2;
     height: $stroke-width;
     position: absolute;
     margin-left: $grid-width/2;
