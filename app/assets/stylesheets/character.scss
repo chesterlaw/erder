@@ -69,7 +69,7 @@
 
 .character__stroke--quadrant-border--q2-bottom {
   height: $stroke-width;
-  top: -$stroke-width/2;
+  top: $grid-width/2 - $stroke-width/2;
   width: $grid-width/2;
 }
 
