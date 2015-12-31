@@ -49,3 +49,17 @@
   top: 50%;
   margin-top: -$stroke-width/2;
 }
+
+.character__stroke.character__stroke--q2--top {
+  height: $stroke-width;
+  position: absolute;
+  top: -$stroke-width/2;
+  width: $grid-width/2;
+}
+
+.character__stroke.character__stroke--q3--bottom {
+  height: $stroke-width;
+  position: absolute;
+  bottom: -$stroke-width/2;
+  width: $grid-width/2;
+}
