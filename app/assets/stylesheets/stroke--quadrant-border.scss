@@ -1,0 +1,42 @@
+.stroke--quadrant-border {
+  position: absolute;
+  width: $stroke-width;
+}
+
+.stroke--quadrant-border--q1-right {
+  height: $grid-width/2 + $stroke-width/2;
+  top: -$stroke-width/2;
+  right: -$stroke-width/2;
+}
+
+.stroke--quadrant-border--q2-top {
+  height: $stroke-width;
+  top: -$stroke-width/2;
+  width: $grid-width/2;
+}
+
+.stroke--quadrant-border--q2-bottom {
+  height: $stroke-width;
+  top: $grid-width/2 - $stroke-width/2;
+  width: $grid-width/2;
+}
+
+.stroke--quadrant-border--q2-left {
+  height: $grid-width/2 + $stroke-width/2;
+  width: $stroke-width;
+  top: -$stroke-width/2;
+  left: -$stroke-width/2;
+}
+
+.stroke--quadrant-border--q3-bottom {
+  height: $stroke-width;
+  bottom: -$stroke-width/2;
+  width: $grid-width/2;
+}
+
+.stroke--quadrant-border--q4-top {
+  height: $stroke-width;
+  bottom: $grid-width/2 - $stroke-width/2;
+  right: 0;
+  width: $grid-width/2;
+}
