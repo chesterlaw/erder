@@ -1,5 +1,5 @@
 .a.character {
-  .horizontal-stroke {
+  .horizontal.character__stroke {
     height: $stroke-width;
     width: 100%;
     background: $stroke-color;
@@ -8,7 +8,7 @@
     margin-top: -$stroke-width/2;
   }
 
-  .diagonal-stroke {
+  .diagonal.character__stroke {
     position: absolute;
     $extra-height: 30%;
     width: $stroke-width;
@@ -20,18 +20,18 @@
   }
 
 
-  .left.diagonal-stroke {
+  .left.diagonal.character__stroke {
     margin-left: -$stroke-width/2 + $grid-width/4;
     transform: rotate(26.5218463deg);
   }
 
-  .right.diagonal-stroke {
+  .right.diagonal.character__stroke {
     margin-right: -$stroke-width/2 + $grid-width/4;
     transform: rotate(-26.5218463deg);
     right: 0;
   }
 
-  .bottom.mask {
+  .bottom.character__mask {
     height: 100px;
     width: $grid-width;
     position: absolute;
@@ -41,7 +41,7 @@
     margin-left: -$extra-width/2;
   }
 
-  .left.mask {
+  .left.character__mask {
     background: blue;
     position: absolute;
     $extra-height: 10%;
@@ -54,26 +54,3 @@
     margin-left: -$mask-width/2 + $grid-width/4 - $stroke-width/2 - $mask-width/2;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
