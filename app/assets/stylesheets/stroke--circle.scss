@@ -2,8 +2,8 @@
 $stroke-width-ratio: $stroke-width/$grid-width;
 
 .stroke.stroke--circle {
-  $ratio: 1 + $stroke-width-ratio;
-  $width: $grid-width * $ratio;
+  $width-ratio: 1 + $stroke-width-ratio;
+  $width: $grid-width * $width-ratio;
   width: $width;
   height: $width;
   border-radius: 50%;
@@ -25,4 +25,27 @@ $stroke-width-ratio: $stroke-width/$grid-width;
   left: 50%;
   margin-left: -$width/2;
   margin-top: -$width/2;
+}
+
+.stroke--oval {
+  border-radius: 50%;
+  $width-ratio: 1 + $stroke-width-ratio;
+  $width: $grid-width * $width-ratio;
+  width: $width;
+  height: $grid-width/2 + $stroke-width;
+  position: absolute;
+  top: -$stroke-width/2;
+  left: -$stroke-width/2;
+}
+
+.mask--oval {
+  border-radius: 50%;
+  $width-ratio: 1 + $stroke-width-ratio;
+  background: white;
+  $width: $grid-width - $stroke-width;
+  width: $width;
+  height: $grid-width/2 - $stroke-width;
+  position: absolute;
+  top: $stroke-width/2;
+  left: $stroke-width/2;
 }
