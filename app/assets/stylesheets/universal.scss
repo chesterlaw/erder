@@ -3,6 +3,7 @@ $stroke-width-ratio: 0.1;
 $stroke-width: $grid-width*$stroke-width-ratio;
 $stroke-color: #000;
 $letter-opacity: 0.65;
+$mask-opacity: 0.8;
 
 body {
   margin: 0;
@@ -37,5 +38,5 @@ div, body {
 
 .mask {
   background: white;
-  opacity: $letter-opacity;
+  opacity: $mask-opacity;
 }
