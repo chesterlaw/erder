@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'index#all'
+  root 'index#index'
   get 'a', controller: :index, action: :a
   get 'b', controller: :index, action: :b
   get 'c', controller: :index, action: :c
