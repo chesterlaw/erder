@@ -1,10 +1,11 @@
-
 .a.character {
-  .horizontal.stroke {
+  .stroke--a-horizontal {
     height: $stroke-width;
-    width: 100%;
+    width: 50%;
     position: absolute;
     top: 50%;
+    left: 50%;
+    margin-left: -25%;
     margin-top: -$stroke-width/2;
   }
 
