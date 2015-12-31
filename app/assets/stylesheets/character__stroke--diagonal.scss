@@ -35,3 +35,12 @@ $pythagorean-ratio: 0.41;
   right: -$stroke-width/2 + $grid-width/4;
   transform: rotate(-45deg);
 }
+
+.character__bottom-diagonals__q4-to-bottom-right--non-full {
+  right: -$stroke-width/2 + $grid-width/4;
+  transform: rotate(-45deg);
+  $height: ($grid-width/2)*(1+$pythagorean-ratio);
+  height: $height;
+  background: blue;
+  margin-top: -(($grid-width/2)*($pythagorean-ratio))/2;  
+}
