@@ -1,0 +1,34 @@
+// Horizontal strokes
+.character__stroke--horizontal {
+  height: $stroke-width;
+  width: $grid-width + $stroke-width;
+  position: absolute;
+  left: -$stroke-width/2;
+}
+
+.character__stroke--horizontal--top {
+  top: -$stroke-width/2;
+}
+
+.character__stroke--horizontal--middle {
+  top: 50%;
+  margin-top: -$stroke-width/2;
+}
+
+.character__stroke--horizontal--bottom {
+  bottom: 0;
+  margin-bottom: -$stroke-width/2;
+}
+
+// Vertical strokes
+.character__stroke--vertical {
+  height: $grid-width + $stroke-width;
+  width: $stroke-width;
+  position: absolute;
+  left: -$stroke-width/2;
+  top: -$stroke-width/2;
+}
+
+.character__stroke--vertical--left {}
+.character__stroke--vertical--middle {}
+.character__stroke--vertical--right {}
