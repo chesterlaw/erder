@@ -73,6 +73,13 @@
   width: $grid-width/2;
 }
 
+.stroke--quadrant-border--q2-left {
+  height: $grid-width/2 + $stroke-width/2;
+  width: $stroke-width;
+  top: -$stroke-width/2;
+  left: -$stroke-width/2;
+}
+
 .stroke--quadrant-border--q3-bottom {
   height: $stroke-width;
   bottom: -$stroke-width/2;
