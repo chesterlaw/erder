@@ -1,0 +1,37 @@
+$pythagorean-ratio: 0.41;
+
+.character__stroke--diagonal {
+  $height: ($grid-width/2)*(1+$pythagorean-ratio) + $stroke-width;
+  height: $height;
+  width: $stroke-width;
+  position: absolute;
+  right: -$stroke-width/2 + $grid-width/2;
+  margin-top: -($stroke-width + ($grid-width/2)*($pythagorean-ratio))/2;  
+}
+
+.character__stroke--diagonal--q1-to-bottom-left {
+  right: -$stroke-width/2 + $grid-width/4;
+  transform: rotate(45deg);
+}
+
+.character__stroke--diagonal--q2-to-bottom-right {
+  left: -$stroke-width/2 + $grid-width/4;
+  transform: rotate(-45deg);
+}
+
+.character__bottom-diagonals {
+  width: $grid-width;
+  height: $grid-width/2;
+  position: absolute;
+  top: 50%;
+}
+
+.character__bottom-diagonals__q3-to-bottom-left {
+  left: -$stroke-width/2 + $grid-width/4;
+  transform: rotate(45deg);
+}
+
+.character__bottom-diagonals__q4-to-bottom-right {
+  right: -$stroke-width/2 + $grid-width/4;
+  transform: rotate(-45deg);
+}

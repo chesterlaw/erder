@@ -41,34 +41,3 @@
   right: 0;
   margin-right: -$stroke-width/2;
 }
-
-.character__stroke--diagonal {
-  $stroke-width: 50px;
-  $pythagorean-ratio: 0.41;
-  $height: ($grid-width)*(1+$pythagorean-ratio) + $stroke-width;
-  height: $height;
-  width: $stroke-width;
-  position: absolute;
-  right: -$stroke-width/2 + $grid-width/2;
-  margin-top: -($stroke-width + ($grid-width)*($pythagorean-ratio))/2;
-}
-
-.character__stroke--diagonal--left-to-right {
-  transform: rotate(-45deg);
-}
-
-.character__stroke--diagonal--right-to-left {
-  transform: rotate(45deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
