@@ -1,0 +1,7 @@
+.character--j__mask {
+  height: $grid-width/2 + $stroke-width/2;
+  width: $grid-width;
+  position: absolute;
+  left: -$stroke-width/2;
+  top: -$stroke-width/2;
+}
