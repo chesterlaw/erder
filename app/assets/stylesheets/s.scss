@@ -1,0 +1,31 @@
+.character--s {
+  .character--s__mask {
+    width: $grid-width/2 + $stroke-width/2;
+    height: $grid-width/4 - $stroke-width;
+    position: absolute;
+  }
+
+  .character--s__mask--q1 {
+    top: $grid-width/4 + $stroke-width/2;
+    right: -$stroke-width/2;
+  }
+
+  .character--s__mask--q3 {
+    bottom: $grid-width/4 + $stroke-width/2;
+    left: -$stroke-width/2;
+  }
+
+  .character--s__mask--top-half-q4 {
+    height: $grid-width/4 - $stroke-width/2;
+    width: $grid-width/2;
+    top: $grid-width/4 + $stroke-width/2;
+    right: 0;
+  }
+
+  .character--s__mask--bottom-half-q2 {
+    height: $grid-width/4 - $stroke-width/2;
+    width: $grid-width/2;
+    bottom: $grid-width/4 + $stroke-width/2;
+    left: 0;
+  }
+}
