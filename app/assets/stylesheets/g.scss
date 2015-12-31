@@ -1,0 +1,24 @@
+.g--character__mask {
+  position: absolute;
+}
+
+.g--character__mask--left {
+  background: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  $height: $grid-width/2 - $stroke-width/2;
+  $width: $grid-width/2 - $stroke-width/2;
+  border-width: 0 0 $height $width;
+  border-color: transparent transparent $mask-color transparent;
+  right: 0;
+  bottom: $grid-width*0.5 + $stroke-width/2;
+}
+
+.g--character__mask--right {
+  background: white;
+  width: $stroke-width;
+  height: $grid-width/2 - $stroke-width/2;
+  top: 0;
+  right: -$stroke-width;
+}
