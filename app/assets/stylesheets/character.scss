@@ -41,3 +41,11 @@
   right: 0;
   margin-right: -$stroke-width/2;
 }
+
+.character__stroke--vertical--bottom-middle {
+  margin-left: -$stroke-width/2;
+  height: $grid-width/2 + $stroke-width;
+  left: 50%;
+  top: 50%;
+  margin-top: -$stroke-width/2;
+}
