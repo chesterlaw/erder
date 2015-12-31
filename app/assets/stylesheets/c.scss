@@ -1,0 +1,54 @@
+.c.character {
+  $stroke-width-ratio: $stroke-width/$grid-width;
+
+  .circle.character__stroke {
+    $ratio: 1 + $stroke-width-ratio;
+    $width: $grid-width * $ratio;
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -$width/2;
+    margin-top: -$width/2;
+  }
+
+  .circle.character__mask {
+    $width-ratio: 1 - $stroke-width-ratio;
+    $width: 100% * $width-ratio;
+    width: $width;
+    height: $grid-width * $width-ratio;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -$width/2;
+    margin-top: -$width/2;
+  }
+
+  .horizontal.character__stroke {
+    width: $grid-width/2;
+    height: $stroke-width;
+    position: absolute;
+    margin-left: $grid-width/2;
+  }
+
+  .top.horizontal.character__stroke {
+    margin-top: -$stroke-width/2;
+  }
+
+  .bottom.horizontal.character__stroke {
+    bottom: 0;
+    margin-bottom: -$stroke-width/2;
+  }
+
+  .right-half.character__mask {
+    $extra-width: $stroke-width-ratio * $grid-width / 2;
+    height: $grid-width - $stroke-width;
+    width: $grid-width/2 + $extra-width;
+    position: absolute;
+    top: $stroke-width/2;
+    left: 50%;
+  }
+}
