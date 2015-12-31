@@ -2,7 +2,6 @@
   .horizontal.character__stroke {
     height: $stroke-width;
     width: 100%;
-    background: $stroke-color;
     position: absolute;
     top: 50%;
     margin-top: -$stroke-width/2;
@@ -13,7 +12,6 @@
     $extra-height: 30%;
     width: $stroke-width;
     height: 100% + $extra-height;
-    background: $stroke-color;
     margin-top: -$extra-height/2;
     transform: rotate(26.5218463deg);
     transform-origin: 50% 50%;
