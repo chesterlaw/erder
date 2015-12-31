@@ -31,10 +31,10 @@
   }
 
   .bottom.mask {
-    height: 100px;
+    height: $stroke-width;
     width: $grid-width;
     position: absolute;
-    bottom: -100px;
+    bottom: -$stroke-width*1.5;
     $extra-width: 20%;
     width: 100% + $extra-width;
     margin-left: -$extra-width/2;
