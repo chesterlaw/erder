@@ -1,0 +1,28 @@
+// Circle element
+$stroke-width-ratio: $stroke-width/$grid-width;
+
+.character__stroke.character__stroke--circle {
+  $ratio: 1 + $stroke-width-ratio;
+  $width: $grid-width * $ratio;
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -$width/2;
+  margin-top: -$width/2;
+}
+
+.character__mask.character__mask--circle {
+  $width-ratio: 1 - $stroke-width-ratio;
+  $width: 100% * $width-ratio;
+  width: $width;
+  height: $grid-width * $width-ratio;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -$width/2;
+  margin-top: -$width/2;
+}
