@@ -8,28 +8,72 @@
     margin-top: -$stroke-width/2;
   }
 
-  .left-diagonal-stroke {
+  .diagonal-stroke {
     position: absolute;
     $extra-height: 30%;
     width: $stroke-width;
     height: 100% + $extra-height;
     background: $stroke-color;
     margin-top: -$extra-height/2;
-    margin-left: -$stroke-width/2 + $grid-width/4;
     transform: rotate(26.5218463deg);
     transform-origin: 50% 50%;
   }
 
-  .right-diagonal-stroke {
-    position: absolute;
-    $extra-height: 30%;
-    width: $stroke-width;
-    height: 100% + $extra-height;
-    background: $stroke-color;
-    margin-top: -$extra-height/2;
-    transform: rotate(-26.5218463deg);
-    transform-origin: 50% 50%;
-    right: 0;
+
+  .left.diagonal-stroke {
+    margin-left: -$stroke-width/2 + $grid-width/4;
+    transform: rotate(26.5218463deg);
+  }
+
+  .right.diagonal-stroke {
     margin-right: -$stroke-width/2 + $grid-width/4;
-  }  
+    transform: rotate(-26.5218463deg);
+    right: 0;
+  }
+
+  .bottom.mask {
+    height: 100px;
+    width: $grid-width;
+    position: absolute;
+    bottom: -100px;
+    $extra-width: 20%;
+    width: 100% + $extra-width;
+    margin-left: -$extra-width/2;
+  }
+
+  .left.mask {
+    background: blue;
+    position: absolute;
+    $extra-height: 10%;
+    $mask-width: 20px;
+    width: $mask-width;
+    height: 100% + $extra-height;
+    transform: rotate(26.5218463deg);
+    transform-origin: 50% 50%;
+    margin-top: -$extra-height/2;
+    margin-left: -$mask-width/2 + $grid-width/4 - $stroke-width/2 - $mask-width/2;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

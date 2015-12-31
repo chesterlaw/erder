@@ -1,5 +1,5 @@
 $grid-width: 500px;
-$stroke-width: 30px;
+$stroke-width: 50px;
 $stroke-color: #000;
 $letter-opacity: 0.65;
 
@@ -26,5 +26,10 @@ div, body {
   height: $grid-width;
   border: 1px solid black;
   position: relative;
+  opacity: $letter-opacity;
+}
+
+.mask {
+  background: white;
   opacity: $letter-opacity;
 }
