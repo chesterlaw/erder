@@ -28,4 +28,21 @@
     bottom: $grid-width/4 + $stroke-width/2;
     left: -$stroke-width/2;
   }
+
+  .character--s__top-cap {
+    width: $grid-width/2 + $stroke-width/2;
+    height: $stroke-width/2;
+    position: absolute;
+    right: -$stroke-width/2;
+    top: $grid-width/4;
+  }
+
+  .character--s__bottom-cap {
+    width: $grid-width/2 + $stroke-width/2;
+    height: $stroke-width/2;
+    position: absolute;
+    left: -$stroke-width/2;
+    // background: blue;
+    bottom: $grid-width/4;
+  }
 }
