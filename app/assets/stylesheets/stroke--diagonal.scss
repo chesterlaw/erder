@@ -44,3 +44,7 @@ $pythagorean-ratio: 0.41;
   background: blue;
   margin-top: -(($grid-width/2)*($pythagorean-ratio))/2;  
 }
+
+.stroke--diagonal--top-half-to-bottom-left {
+  background: blue;
+}
