@@ -76,4 +76,7 @@ class IndexController < ApplicationController
 
   def z
   end
+
+  def all
+  end
 end

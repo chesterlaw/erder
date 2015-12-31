@@ -1,5 +1,6 @@
 $grid-width: 500px;
-$stroke-width: 50px;
+$stroke-width-ratio: 0.1;
+$stroke-width: $grid-width*$stroke-width-ratio;
 $stroke-color: #000;
 $letter-opacity: 0.65;
 
