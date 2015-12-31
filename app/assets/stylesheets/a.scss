@@ -1,3 +1,4 @@
+
 .a.character {
   .horizontal.stroke {
     height: $stroke-width;
@@ -28,7 +29,7 @@
     right: 0;
   }
 
-  .bottom.character__mask {
+  .bottom.mask {
     height: 100px;
     width: $grid-width;
     position: absolute;
@@ -38,7 +39,7 @@
     margin-left: -$extra-width/2;
   }
 
-  .left.character__mask {
+  .left.mask {
     background: blue;
     position: absolute;
     $extra-height: 10%;

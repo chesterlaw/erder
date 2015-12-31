@@ -14,7 +14,7 @@
     margin-top: -$width/2;
   }
 
-  .circle.character__mask {
+  .circle.mask {
     $width-ratio: 1 - $stroke-width-ratio;
     $width: 100% * $width-ratio;
     width: $width;
@@ -42,7 +42,7 @@
     bottom: -$stroke-width/2;
   }
 
-  .right-half.character__mask {
+  .right-half.mask {
     $extra-width: $stroke-width-ratio * $grid-width / 2;
     height: $grid-width - $stroke-width;
     width: $grid-width/2 + $extra-width;
