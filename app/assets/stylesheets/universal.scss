@@ -29,6 +29,10 @@ div, body {
   opacity: $letter-opacity;
 }
 
+.stroke {
+  background: $stroke-color;
+}
+
 .mask {
   background: white;
   opacity: $letter-opacity;
