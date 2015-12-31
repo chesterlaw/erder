@@ -4,6 +4,7 @@ $stroke-width: $grid-width*$stroke-width-ratio;
 $stroke-color: #000;
 $letter-opacity: 0.65;
 $mask-opacity: 0.8;
+$mask-color: white;
 
 body {
   margin: 0;
@@ -37,6 +38,6 @@ div, body {
 }
 
 .mask {
-  background: white;
+  background: $mask-color;
   opacity: $mask-opacity;
 }
