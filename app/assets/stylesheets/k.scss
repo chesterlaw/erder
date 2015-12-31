@@ -1,0 +1,16 @@
+$ratio: 2.2360679775;
+
+.character--k {
+  .stroke.my-stroke {
+    background: blue;
+    width: $stroke-width;
+    height: ($grid-width/2)*$ratio + $stroke-width;
+    transform: rotate(-116.5218463deg);
+    position: absolute;
+    top: $stroke-width/2;
+    left: 50%;
+    margin-left: -$stroke-width/2;
+    margin-top: -$grid-width/4;
+  }
+}
+
