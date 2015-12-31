@@ -19,14 +19,15 @@ div, body {
 .grid {
   position: absolute;
   width: $grid-width;
+  height: $grid-width;
 }
 
 .character {
   width: $grid-width;
   height: $grid-width;
-  border: 1px solid black;
   position: relative;
   opacity: $letter-opacity;
+  // Don't add a border to this, otherwise will mess up C and O.
 }
 
 .character__stroke {
