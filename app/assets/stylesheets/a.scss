@@ -14,7 +14,6 @@
     height: 100% + $extra-height;
     margin-top: -$extra-height/2;
     transform: rotate(26.5218463deg);
-    transform-origin: 50% 50%;
   }
 
 
@@ -47,7 +46,6 @@
     width: $mask-width;
     height: 100% + $extra-height;
     transform: rotate(26.5218463deg);
-    transform-origin: 50% 50%;
     margin-top: -$extra-height/2;
     margin-left: -$mask-width/2 + $grid-width/4 - $stroke-width/2 - $mask-width/2;
   }
