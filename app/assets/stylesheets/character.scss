@@ -25,19 +25,19 @@
   height: $grid-width + $stroke-width;
   width: $stroke-width;
   position: absolute;
+  top: -$stroke-width/2;
 }
 
 .character__stroke--vertical--left {
   left: -$stroke-width/2;
-  top: -$stroke-width/2;
 }
 
 .character__stroke--vertical--middle {
   left: 50%;
   margin-left: -$stroke-width/2;
-  top: -$stroke-width/2;
 }
 
 .character__stroke--vertical--right {
-
+  right: 0;
+  margin-right: -$stroke-width/2;
 }
