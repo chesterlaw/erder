@@ -1,0 +1,15 @@
+.character--question-mark__mask {
+  height: $grid-width/2;
+  width: $grid-width/2;
+  position: absolute;
+  top: $grid-width/4;
+  left: -$stroke-width/2;
+}
+
+.character--question-mark__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  position: absolute;
+  left: -$stroke-width/2;
+  top: $grid-width/4;
+}
