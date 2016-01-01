@@ -5,3 +5,11 @@
   left: -$stroke-width/2;
   top: -$stroke-width/2;
 }
+
+.character--j__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  position: absolute;
+  left: -$stroke-width/2;
+  top: $grid-width/2 - $stroke-width/2;
+}
