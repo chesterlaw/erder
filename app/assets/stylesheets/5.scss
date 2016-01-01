@@ -1,0 +1,15 @@
+.character--5__mask-1 {
+  position: absolute;
+  width: $grid-width/2 + $stroke-width/2;
+  height: $grid-width/4 - $stroke-width/2;
+  top: $grid-width/2 + $stroke-width/2;
+  left: -$stroke-width/2;
+}
+
+.character--5__end-cap {
+  position: absolute;
+  width: $stroke-width;
+  height: $stroke-width/2;
+  left: -$stroke-width/2;
+  bottom: $grid-width/4;
+}
