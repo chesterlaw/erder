@@ -53,3 +53,13 @@
   top: 50%;
   margin-top: -$stroke-width/2;
 }
+
+// Misc.
+.stroke--punctuation-dot {
+  width: $stroke-width;
+  height: $stroke-width;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -$stroke-width/2;
+  left: $grid-width/2 - $stroke-width/2;
+}
