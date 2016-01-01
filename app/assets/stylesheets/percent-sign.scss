@@ -1,5 +1,5 @@
 .character--percent-sign__circle {
-  $width: $grid-width/2 - $stroke-width*2;
+  $width: $grid-width/2 - $stroke-width*4;
   width: $width;
   height: $width;
   position: absolute;
@@ -9,7 +9,16 @@
   box-sizing: content-box;
 }
 
+.character--percent-sign__circle--left {
+  top: $grid-width/6;
+  margin-top: -$stroke-width/2;
+  left: $grid-width/6;
+  margin-left: -$stroke-width/2;
+}
+
 .character--percent-sign__circle--right {
-  bottom: 0;
-  right: 0;
+  bottom: $grid-width/6;
+  margin-bottom: -$stroke-width/2;
+  right: $grid-width/6;
+  margin-right: -$stroke-width/2;
 }
