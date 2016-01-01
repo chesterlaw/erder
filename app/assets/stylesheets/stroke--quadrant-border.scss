@@ -3,6 +3,13 @@
   width: $stroke-width;
 }
 
+.stroke--quadrant-border--q1-top {
+  width: $grid-width/2 + $stroke-width/2;
+  height: $stroke-width;
+  top: -$stroke-width/2;
+  right: -$stroke-width/2;
+}
+
 .stroke--quadrant-border--q1-right {
   height: $grid-width/2 + $stroke-width/2;
   top: -$stroke-width/2;
@@ -47,4 +54,11 @@
   bottom: $grid-width/2 - $stroke-width/2;
   right: 0;
   width: $grid-width/2;
+}
+
+.stroke--quadrant-border--q4-bottom {
+  height: $stroke-width;
+  bottom: -$stroke-width/2;
+  right: -$stroke-width/2;
+  width: $grid-width/2 + $stroke-width/2;
 }
