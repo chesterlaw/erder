@@ -19,6 +19,11 @@ $pythagorean-ratio: 0.41;
   transform: rotate(-45deg);
 }
 
+.stroke--diagonal--q2-to-bottom-left {
+  left: -$stroke-width/2 + $grid-width/4;
+  transform: rotate(45deg);
+}
+
 .character__bottom-diagonals {
   width: $grid-width;
   height: $grid-width/2;
