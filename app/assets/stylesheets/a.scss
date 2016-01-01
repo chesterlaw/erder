@@ -15,18 +15,18 @@
     width: $stroke-width;
     height: 100% + $extra-height;
     margin-top: -$extra-height/2;
-    transform: rotate(26.5218463deg);
+    transform: rotate(26.565051177078deg);
   }
 
 
   .left.diagonal.stroke {
     margin-left: -$stroke-width/2 + $grid-width/4;
-    transform: rotate(26.5218463deg);
+    transform: rotate(26.565051177078deg);
   }
 
   .right.diagonal.stroke {
     margin-right: -$stroke-width/2 + $grid-width/4;
-    transform: rotate(-26.5218463deg);
+    transform: rotate(-26.565051177078deg);
     right: 0;
   }
 
@@ -47,7 +47,7 @@
     $mask-width: 20px;
     width: $mask-width;
     height: 100% + $extra-height;
-    transform: rotate(26.5218463deg);
+    transform: rotate(26.565051177078deg);
     margin-top: -$extra-height/2;
     margin-left: -$mask-width/2 + $grid-width/4 - $stroke-width/2 - $mask-width/2;
   }
