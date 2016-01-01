@@ -20,3 +20,11 @@
   position: absolute;
   left: -$width - $stroke-width/2;
 }
+
+.mask--bottom-side {
+  width: $grid-width;
+  height: $stroke-width;
+  background: blue;
+  position: absolute;
+  bottom: -$stroke-width - $stroke-width/2;
+}

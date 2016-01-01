@@ -7,16 +7,33 @@ $amount-to-center: -($height - $grid-width)/2;
   width: $stroke-width;
   height: $height;
   position: absolute;
-  left: 50%;
-  margin-left: -$stroke-width/2;
 }
 
 .stroke--half-diagonal--top {
+  margin-left: -$stroke-width/2;
+  left: 50%;
   top: $amount-to-center - $grid-width*0.25;
   transform: rotate(-116.565051177078deg);
 }
 
 .stroke--half-diagonal--bottom {
+  margin-left: -$stroke-width/2;
+  left: 50%;
   bottom: $amount-to-center - $grid-width*0.25;
   transform: rotate(116.565051177078deg);
+}
+
+.stroke--half-diagonal--left {
+  margin-left: -$stroke-width/2;
+  left: 50%;
+  top: $amount-to-center;
+  transform: rotate(-26.565051177078deg);
+  left: $grid-width/4;
+}
+
+.stroke--half-diagonal--right {
+  margin-right: -$stroke-width/2;
+  top: $amount-to-center;
+  transform: rotate(26.565051177078deg);
+  right: $grid-width/4;
 }
