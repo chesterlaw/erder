@@ -1,0 +1,30 @@
+// Diagonal strokes that take an angle of a quarter of the square.
+$quarter-hypotenuse-ratio: 1.0307764064;
+
+.stroke--quarter-stroke {
+  width: $stroke-width;
+  $quarter-stroke-height: $grid-width*$quarter-hypotenuse-ratio + $stroke-width;
+  height: $quarter-stroke-height;
+  position: absolute;
+  top: -($quarter-stroke-height - $grid-width)/2;
+}
+
+.stroke--quarter-stroke--1 {
+  left: $grid-width/8 - $stroke-width/2;
+  transform: rotate(-14.036243461deg);
+}
+
+.stroke--quarter-stroke--2 {
+  left: $grid-width*3/8 - $stroke-width/2;
+  transform: rotate(14.036243461deg);
+}
+
+.stroke--quarter-stroke--3 {
+  left: $grid-width*5/8 - $stroke-width/2;
+  transform: rotate(-14.036243461deg);
+}
+
+.stroke--quarter-stroke--4 {
+  left: $grid-width*7/8 - $stroke-width/2;
+  transform: rotate(14.036243461deg);
+}
