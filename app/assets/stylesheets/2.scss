@@ -1,4 +1,4 @@
-.character--2__mask-1 {
+.character--2__top-mask {
   height: $grid-width/4;
   width: $grid-width/2 + $stroke-width/2;
   position: absolute;
@@ -14,7 +14,15 @@
   top: $grid-width/4;
 }
 
-.character--2__mask {
+.character--2__middle-mask {
+  width: $grid-width/2 + $stroke-width/2;
+  height: $grid-width/4;
+  position: absolute;
+  bottom: $grid-width/4;
+  left: $grid-width/2;
+}
+
+.character--2__bottom-mask {
   width: $grid-width;
   height: $grid-width/4 - $stroke-width/2;
   position: absolute;
