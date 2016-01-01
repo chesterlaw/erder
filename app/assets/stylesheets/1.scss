@@ -1,0 +1,14 @@
+.character--1 {
+  // Diagonal strokes that take an angle of half of the square.
+  $hypotenuse-ratio: 2.2360679775;
+  $height: ($grid-width/4)*$hypotenuse-ratio + $stroke-width;
+
+  .character--1__diagonal-stroke {
+    width: $stroke-width;
+    height: $height;
+    position: absolute;
+    left: $grid-width/4 - $stroke-width/2;
+    top: -$grid-width/4 + $stroke-width/2;
+    transform: rotate(-116.565051177078deg);
+  }
+}
