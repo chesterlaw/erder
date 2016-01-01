@@ -41,4 +41,5 @@ Rails.application.routes.draw do
   get 'at_sign', controller: :index, action: :at_sign
   get 'percent_sign', controller: :index, action: :percent_sign
   get 'plus_sign', controller: :index, action: :plus_sign
+  get 'minus_sign', controller: :index, action: :minus_sign
 end

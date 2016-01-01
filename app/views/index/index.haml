@@ -11,7 +11,7 @@
 
   %br
 
-  - other_characters = ['exclamation_mark', 'question_mark', 'at_sign', 'percent_sign', 'plus_sign']
+  - other_characters = ['exclamation_mark', 'question_mark', 'at_sign', 'percent_sign', 'plus_sign', 'minus_sign']
   - other_characters.each do |character|
     = link_to character.to_s do
       = render :file => "index/#{character}"
