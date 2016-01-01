@@ -1,0 +1,36 @@
+.stroke--oval {
+  width: $grid-width - $stroke-width;
+  height: $grid-width - $stroke-width*2;
+  position: absolute;
+  background: none;
+  border-radius: 50%;
+  border: $stroke-width solid $stroke-color;
+  box-sizing: content-box;
+  left: -$stroke-width/2;
+  border-width: $stroke-width*2 $stroke-width $stroke-width*2 $stroke-width;
+  transform: scaleY(0.5);
+}
+
+.stroke--oval--top {
+  top: -$stroke-width - $grid-width/4;
+}
+
+.stroke--oval--top-border {
+  border-color: $stroke-color transparent transparent transparent;
+}
+
+.stroke--oval--right-border {
+  border-color: transparent $stroke-color transparent transparent;
+}
+
+.stroke--oval--bottom-border {
+  border-color: transparent transparent $stroke-color transparent;
+}
+
+.stroke--oval--left-border {
+  border-color: transparent transparent transparent $stroke-color;
+}
+
+.stroke--oval--bottom {
+  top: -$stroke-width + $grid-width/4;
+}
