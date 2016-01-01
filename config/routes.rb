@@ -26,4 +26,13 @@ Rails.application.routes.draw do
   get 'x', controller: :index, action: :x
   get 'y', controller: :index, action: :y
   get 'z', controller: :index, action: :z
+  get '1', controller: :index, action: 1
+  get '2', controller: :index, action: 2
+  get '3', controller: :index, action: 3
+  get '4', controller: :index, action: 4
+  get '5', controller: :index, action: 5
+  get '6', controller: :index, action: 6
+  get '7', controller: :index, action: 7
+  get '8', controller: :index, action: 8
+  get '9', controller: :index, action: 9
 end
