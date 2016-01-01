@@ -38,12 +38,3 @@ div, body {
   opacity: $letter-opacity;
   // Don't add a border to this, otherwise will mess up C and O.
 }
-
-.stroke {
-  background: $stroke-color;
-}
-
-.mask {
-  background: $mask-color;
-  opacity: $mask-opacity;
-}

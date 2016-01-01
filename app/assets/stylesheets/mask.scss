@@ -2,6 +2,11 @@ $hypotenuse-ratio: 2.2360679775;
 $height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width;
 $amount-to-center: -($height - $grid-width)/2;
 
+.mask {
+  background: $mask-color;
+  opacity: $mask-opacity;
+}
+
 .mask--quadrant {
   height: $grid-width/2 - $stroke-width;
   width: $grid-width/2 - $stroke-width/2;
