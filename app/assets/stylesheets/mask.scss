@@ -12,3 +12,11 @@
 .mask--quadrant--q3 {
   bottom: $stroke-width/2;
 }
+
+.mask--left-side {
+  height: $grid-width;
+  $width: $stroke-width;
+  width: $width;
+  position: absolute;
+  left: -$width - $stroke-width/2;
+}
