@@ -37,4 +37,5 @@ Rails.application.routes.draw do
   get '9', controller: :index
   get 'exclamation_mark', controller: :index, action: :exclamation_mark
   get 'question_mark', controller: :index, action: :question_mark
+  get 'at_sign', controller: :index, action: :at_sign
 end

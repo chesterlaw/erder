@@ -1,0 +1,52 @@
+.character--at-sign__center-circle {
+  $width: $grid-width/3 - $stroke-width;
+  width: $width;
+  height: $width;
+  position: absolute;
+  background: none;
+  border-radius: 50%;
+  border: $stroke-width solid $stroke-color;
+  box-sizing: content-box;
+  top: 50%;
+  left: 50%;
+  margin-top: -$width/2 - $stroke-width;
+  margin-left: -$width/2 - $stroke-width;
+}
+
+.character--at-sign__right-half-circle {
+  $width: $grid-width/3 - $stroke-width;
+  width: $width;
+  height: $width;
+  position: absolute;
+  background: none;
+  border-radius: 50%;
+  border: $stroke-width solid $stroke-color;
+  box-sizing: content-box;
+  top: 50%;
+  right: 0%;
+  margin-top: -$width/2 - $stroke-width;
+  margin-right: -$stroke-width/2;
+  border-color: transparent $stroke-color $stroke-color transparent;
+  transform: rotate(45deg);
+}
+
+.character--at-sign__triangle-mask {
+  background: 0;
+  $width: $grid-width/2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 $width $width 0;
+  border-color: transparent #ffffff transparent transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.character--at-sign__normal-mask {
+  width: $stroke-width/2;
+  height: $grid-width/2;
+  position: absolute;
+  bottom: 0;
+  right: -$stroke-width/2;
+}
