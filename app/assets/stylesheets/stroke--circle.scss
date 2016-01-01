@@ -11,8 +11,26 @@ $stroke-width-ratio: $stroke-width/$grid-width;
   box-sizing: content-box;
   top: -$stroke-width/2;
   left: -$stroke-width/2;
-  // border-color: transparent $stroke-color $stroke-color transparent;
-  // transform: rotate(135deg);
+}
+
+.stroke--circle--q1 {
+  border-color: $stroke-color transparent transparent transparent;
+  transform: rotate(45deg);
+}
+
+.stroke--circle--q2 {
+  border-color: transparent transparent transparent $stroke-color;
+  transform: rotate(45deg);
+}
+
+.stroke--circle--q3 {
+  border-color: transparent transparent $stroke-color transparent;
+  transform: rotate(45deg);
+}
+
+.stroke--circle--q4 {
+  border-color: transparent $stroke-color transparent transparent;
+  transform: rotate(45deg);
 }
 
 .stroke--oval {
