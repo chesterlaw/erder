@@ -5,7 +5,7 @@
 
   %br
 
-  - (1..9).each do |character|
+  - (0..9).each do |character|
     = link_to character.to_s do
       = render :file => "index/#{character}"
 

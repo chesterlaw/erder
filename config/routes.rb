@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'x', controller: :index
   get 'y', controller: :index
   get 'z', controller: :index
+  get '0', controller: :index
   get '1', controller: :index
   get '2', controller: :index
   get '3', controller: :index

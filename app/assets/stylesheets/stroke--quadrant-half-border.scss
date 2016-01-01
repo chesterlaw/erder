@@ -9,6 +9,18 @@
   right: -$stroke-width/2;
 }
 
+.stroke--quadrant-half-border--q2-left-bottom {
+  height: $grid-width/4;
+  top: $grid-width/4;
+  left: -$stroke-width/2;  
+}
+
+.stroke--quadrant-half-border--q3-left-top {
+  height: $grid-width/4;
+  top: $grid-width/2;
+  left: -$stroke-width/2;  
+}
+
 .stroke--quadrant-half-border--q3-left-bottom {
   height: $grid-width/4;
   bottom: 0;
