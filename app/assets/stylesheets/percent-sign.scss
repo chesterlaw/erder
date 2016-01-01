@@ -1,0 +1,15 @@
+.character--percent-sign__circle {
+  $width: $grid-width/2 - $stroke-width*2;
+  width: $width;
+  height: $width;
+  position: absolute;
+  background: none;
+  border-radius: 50%;
+  border: $stroke-width solid $stroke-color;
+  box-sizing: content-box;
+}
+
+.character--percent-sign__circle--right {
+  bottom: 0;
+  right: 0;
+}

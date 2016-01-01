@@ -38,4 +38,6 @@ Rails.application.routes.draw do
   get 'exclamation_mark', controller: :index, action: :exclamation_mark
   get 'question_mark', controller: :index, action: :question_mark
   get 'at_sign', controller: :index, action: :at_sign
+  get 'percent_sign', controller: :index, action: :percent_sign
+  get 'plus_sign', controller: :index, action: :plus_sign
 end
