@@ -1,3 +1,7 @@
+$hypotenuse-ratio: 2.2360679775;
+$height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width;
+$amount-to-center: -($height - $grid-width)/2;
+
 .mask--quadrant {
   height: $grid-width/2 - $stroke-width;
   width: $grid-width/2 - $stroke-width/2;
@@ -21,10 +25,12 @@
   left: -$width - $stroke-width/2;
 }
 
-.mask--bottom-side {
-  width: $grid-width;
-  height: $stroke-width;
+.mask--half-diagonal--left {
   background: blue;
+  height: $height;
+  width: $stroke-width;
+  transform: rotate(-26.565051177078deg);
   position: absolute;
-  bottom: -$stroke-width - $stroke-width/2;
+  top: $amount-to-center;
+  left: $grid-width/4 - $stroke-width;
 }
