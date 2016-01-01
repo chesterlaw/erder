@@ -1,13 +1,21 @@
 $hypotenuse-ratio: 2.2360679775;
+$height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width;
+$amount-to-center: -($height - $grid-width)/2;
 
-.character--k__top-diagonal-stroke {
+.character--k__diagonal-stroke {
   width: $stroke-width;
-  $height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width;
   height: $height;
   position: absolute;
   left: 50%;
   margin-left: -$stroke-width/2;
-  $amount-to-center: -($height - $grid-width)/2;
+}
+
+.character--k__diagonal-stroke--top {
   top: $amount-to-center - $grid-width*0.25;
   transform: rotate(-116.565051177078deg);
+}
+
+.character--k__diagonal-stroke--bottom {
+  bottom: $amount-to-center - $grid-width*0.25;
+  transform: rotate(116.565051177078deg);
 }
