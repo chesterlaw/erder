@@ -22,3 +22,24 @@
   top: 0;
   right: -$stroke-width;
 }
+
+.character--g__cap {
+  height: $stroke-width;
+  width: $stroke-width/2;
+  position: absolute;
+}
+
+.character--g__cap--top {
+  background: blue;
+  $translation-amount: 0.109*$grid-width;
+  top: $translation-amount;
+  right: $translation-amount;
+  transform: rotate(-135deg);
+}
+
+.character--g__cap--bottom {
+  top: 50%;
+  margin-top: -$stroke-width/2;
+  left: 50%;
+  margin-left: -$stroke-width/2;
+}
