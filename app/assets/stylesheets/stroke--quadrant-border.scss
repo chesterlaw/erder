@@ -16,6 +16,12 @@
   right: -$stroke-width/2;
 }
 
+.stroke--quadrant-border--q1-left {
+  height: $grid-width/2 + $stroke-width/2;
+  top: -$stroke-width/2;
+  left: $grid-width/2 - $stroke-width/2;
+}
+
 .stroke--quadrant-border--q2-top {
   height: $stroke-width;
   top: -$stroke-width/2;

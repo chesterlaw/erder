@@ -35,4 +35,5 @@ Rails.application.routes.draw do
   get '7', controller: :index
   get '8', controller: :index
   get '9', controller: :index
+  get 'exclamation-mark', controller: :index, action: :exclamation_mark
 end

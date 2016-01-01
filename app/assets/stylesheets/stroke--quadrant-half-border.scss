@@ -20,3 +20,9 @@
   top: $grid-width/2 - $stroke-width/2;
   right: -$stroke-width/2;
 }
+
+.stroke--quadrant-half-border--q4-left-top {
+  height: $grid-width/4;
+  top: $grid-width/2;
+  left: $grid-width/2 - $stroke-width/2;
+}
