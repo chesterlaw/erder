@@ -2,29 +2,17 @@
 $stroke-width-ratio: $stroke-width/$grid-width;
 
 .stroke--circle {
-  $width-ratio: 1 + $stroke-width-ratio;
-  $width: $grid-width * $width-ratio;
-  width: $width;
-  height: $width;
-  border-radius: 50%;
+  width: $grid-width - $stroke-width;
+  height: $grid-width - $stroke-width;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -$width/2;
-  margin-top: -$width/2;
-}
-
-.mask--circle {
-  $width-ratio: 1 - $stroke-width-ratio;
-  $width: 100% * $width-ratio;
-  width: $width;
-  height: $grid-width * $width-ratio;
+  background: none;
   border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -$width/2;
-  margin-top: -$width/2;
+  border: $stroke-width solid $stroke-color;
+  box-sizing: content-box;
+  top: -$stroke-width/2;
+  left: -$stroke-width/2;
+  // border-color: transparent $stroke-color $stroke-color transparent;
+  // transform: rotate(135deg);
 }
 
 .stroke--oval {
