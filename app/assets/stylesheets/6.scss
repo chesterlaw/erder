@@ -1,0 +1,30 @@
+.character--6__top-mask {
+  width: $grid-width/2;
+  height: $grid-width/4;
+  position: absolute;
+  top: -$stroke-width/2;
+}
+
+.character--6__right-mask {
+  width: $grid-width/2 + $stroke-width/2;
+  height: $grid-width/4;
+  position: absolute;
+  top: $grid-width/4;
+  right: -$stroke-width/2;
+}
+
+.character--6__bottom-mask {
+  width: $grid-width/2;
+  height: $grid-width/4;
+  position: absolute;
+  bottom: -$stroke-width/2;
+  margin-left: -$stroke-width/2;
+}
+
+.character--6__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  position: absolute;
+  top: $grid-width/4;
+  right: -$stroke-width/2;
+}
