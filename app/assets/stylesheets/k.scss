@@ -19,3 +19,11 @@ $amount-to-center: -($height - $grid-width)/2;
   bottom: $amount-to-center - $grid-width*0.25;
   transform: rotate(116.565051177078deg);
 }
+
+.character--k__left-mask {
+  height: $grid-width;
+  $width: $stroke-width;
+  width: $width;
+  position: absolute;
+  left: -$width - $stroke-width/2;
+}
