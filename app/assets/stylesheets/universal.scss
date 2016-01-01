@@ -5,6 +5,7 @@ $stroke-color: #000;
 $letter-opacity: 0.65;
 $mask-opacity: 0.8;
 $mask-color: white;
+$grid-opacity: 1;
 
 body {
   margin: 0;
@@ -27,6 +28,7 @@ div, body {
   position: absolute;
   width: $grid-width;
   height: $grid-width;
+  opacity: $grid-opacity;
 }
 
 .character {
