@@ -1,6 +1,21 @@
-.character--lowercase--e__cap {
-  width: $stroke-width;
-  height: $stroke-width/2;
+.character--lowercase-e__mask-1 {
+  $width: $lowercase-grid-width/2;
+  $height: $lowercase-grid-width/2;
+
+  background: 0;
   top: $lowercase-grid-width*1.5;
+  left: $lowercase-grid-width/2;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 $width $height 0;
+  border-color: transparent $mask-color transparent transparent;
+}
+
+.character--lowercase-e__mask-2 {
+  width: $stroke-width/2;
+  height: $lowercase-grid-width/4;
+  top: $lowercase-grid-width*1.5 + $stroke-width/2;
   right: -$stroke-width/2;
 }
