@@ -5,6 +5,11 @@
 
   %br
 
+  - ("a".."a").each do |character|
+    = render :file => "index/lowercase_#{character}"
+
+  %br
+
   - (0..9).each do |character|
     = link_to character.to_s do
       = render :file => "index/#{character}"
