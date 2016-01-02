@@ -43,4 +43,30 @@ Rails.application.routes.draw do
   get 'plus_sign', controller: :index, action: :plus_sign
   get 'minus_sign', controller: :index, action: :minus_sign
   get 'caret', controller: :index, action: :caret
+  get 'lowercase_a', controller: :index
+  get 'lowercase_b', controller: :index
+  get 'lowercase_c', controller: :index
+  get 'lowercase_d', controller: :index
+  get 'lowercase_e', controller: :index
+  get 'lowercase_f', controller: :index
+  get 'lowercase_g', controller: :index
+  get 'lowercase_h', controller: :index
+  get 'lowercase_i', controller: :index
+  get 'lowercase_j', controller: :index
+  get 'lowercase_k', controller: :index
+  get 'lowercase_l', controller: :index
+  get 'lowercase_m', controller: :index
+  get 'lowercase_n', controller: :index
+  get 'lowercase_o', controller: :index
+  get 'lowercase_p', controller: :index
+  get 'lowercase_q', controller: :index
+  get 'lowercase_r', controller: :index
+  get 'lowercase_s', controller: :index
+  get 'lowercase_t', controller: :index
+  get 'lowercase_u', controller: :index
+  get 'lowercase_v', controller: :index
+  get 'lowercase_w', controller: :index
+  get 'lowercase_x', controller: :index
+  get 'lowercase_y', controller: :index
+  get 'lowercase_z', controller: :index
 end
