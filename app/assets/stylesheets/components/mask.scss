@@ -5,12 +5,12 @@ $amount-to-center: -($height - $grid-width)/2;
 .mask {
   background: $mask-color;
   opacity: $mask-opacity;
+  position: absolute;
 }
 
 .mask--quadrant {
   height: $grid-width/2 - $stroke-width;
   width: $grid-width/2 - $stroke-width/2;
-  position: absolute;
   left: $stroke-width/2;
 }
 
@@ -26,7 +26,6 @@ $amount-to-center: -($height - $grid-width)/2;
   height: $grid-width;
   $width: $stroke-width;
   width: $width;
-  position: absolute;
   left: -$width - $stroke-width/2;
 }
 
@@ -35,7 +34,6 @@ $amount-to-center: -($height - $grid-width)/2;
   height: $height;
   width: $stroke-width;
   transform: rotate(-26.565051177078deg);
-  position: absolute;
   top: $amount-to-center;
   left: $grid-width/4 - $stroke-width;
 }
