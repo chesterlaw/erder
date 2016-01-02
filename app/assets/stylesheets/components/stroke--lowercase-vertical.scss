@@ -27,3 +27,8 @@
   top: $lowercase-grid-width - $stroke-width/2;
   right: -$stroke-width/2;
 }
+
+.stroke--lowercase-vertical--bottom-left {
+  bottom: 0;
+  left: -$stroke-width/2;
+}
