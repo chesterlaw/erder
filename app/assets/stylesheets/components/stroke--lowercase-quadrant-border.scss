@@ -5,6 +5,19 @@
   right: -$stroke-width/2;    
 }
 
+.stroke.stroke--lowercase-quadrant-border-middle-q1-bottom {
+  height: $stroke-width;
+  width: $lowercase-grid-width/2;
+  top: $lowercase-grid-width - $stroke-width/2 + $lowercase-grid-width/2;
+  right: 0;
+}
+
+.stroke.stroke--lowercase-quadrant-border-middle-q2-bottom {
+  height: $stroke-width;
+  width: $lowercase-grid-width/2;
+  top: $lowercase-grid-width - $stroke-width/2 + $lowercase-grid-width/2;
+}
+
 .stroke.stroke--lowercase-quadrant-border-middle-q4-bottom {
   height: $stroke-width;
   width: $lowercase-grid-width/2 + $stroke-width/2;
