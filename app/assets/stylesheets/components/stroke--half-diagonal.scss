@@ -37,3 +37,21 @@ $amount-to-center: -($height - $grid-width)/2;
   transform: rotate(26.565051177078deg);
   right: $grid-width/4;
 }
+
+.stroke--half-diagonal--lowercase-top {
+  $height: ($lowercase-grid-width/2)*$hypotenuse-ratio + $stroke-width;
+  $amount-to-center: -($height - $lowercase-grid-width)/2;
+  height: $height;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+  top: $amount-to-center + $lowercase-grid-width*0.75;
+  transform: rotate(-116.565051177078deg);
+}
+
+.stroke--half-diagonal--lowercase-bottom {
+  $height: ($lowercase-grid-width/2)*$hypotenuse-ratio + $stroke-width;
+  $amount-to-center: -($height - $lowercase-grid-width)/2;
+  height: $height;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+  top: $amount-to-center + $lowercase-grid-width*1.25;
+  transform: rotate(116.565051177078deg);
+}
