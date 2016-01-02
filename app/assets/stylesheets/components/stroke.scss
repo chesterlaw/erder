@@ -1,12 +1,12 @@
 .stroke {
   background: $stroke-color;
+  position: absolute;
 }
 
 // Horizontal strokes
 .stroke--horizontal {
   height: $stroke-width;
   width: $grid-width + $stroke-width;
-  position: absolute;
   left: -$stroke-width/2;
 }
 
@@ -28,7 +28,6 @@
 .stroke--vertical {
   height: $grid-width + $stroke-width;
   width: $stroke-width;
-  position: absolute;
   top: -$stroke-width/2;
 }
 
@@ -59,7 +58,6 @@
   width: $stroke-width;
   height: $stroke-width;
   border-radius: 50%;
-  position: absolute;
   bottom: -$stroke-width/2;
   left: $grid-width/2 - $stroke-width/2;
 }
