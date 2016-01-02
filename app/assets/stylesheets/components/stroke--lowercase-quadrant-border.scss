@@ -14,6 +14,13 @@
   right: -$stroke-width/2;    
 }
 
+.stroke--lowercase-quadrant-border-middle-q1-right {
+  width: $stroke-width;
+  height: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width - $stroke-width/2;
+  right: -$stroke-width/2;    
+}
+
 .stroke--lowercase-quadrant-border-middle-q1-bottom {
   height: $stroke-width;
   width: $lowercase-grid-width/2;
@@ -39,6 +46,13 @@
   height: $stroke-width;
   width: $lowercase-grid-width/2;
   top: $lowercase-grid-width - $stroke-width/2 + $lowercase-grid-width/2;
+}
+
+.stroke--lowercase-quadrant-border-middle-q2-left {
+  width: $stroke-width;
+  height: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width - $stroke-width/2;
+  left: -$stroke-width/2;
 }
 
 .stroke--lowercase-quadrant-border-middle-q3-right {
