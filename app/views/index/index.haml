@@ -4,19 +4,16 @@
       = render :file => "index/#{character}"
 
   %br
-
   - ('a'..'z').each do |character|
     %a{href: "lowercase_#{character}"}
       = render :file => "index/lowercase_#{character}"
 
   %br
-
   - (0..9).each do |character|
     = link_to character.to_s do
       = render :file => "index/#{character}"
 
   %br
-
   - other_characters = ['exclamation_mark', 'question_mark', 'at_sign', 'percent_sign', 'plus_sign', 'minus_sign', 'caret']
   - other_characters.each do |character|
     = link_to character.to_s do
