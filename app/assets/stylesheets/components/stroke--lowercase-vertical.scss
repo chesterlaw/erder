@@ -1,13 +1,24 @@
 .stroke--lowercase-vertical {
   width: $stroke-width;
   height: $lowercase-grid-width + $stroke-width;
-  left: -$stroke-width/2;
 }
 
 .stroke--lowercase-vertical--top-left {
   top: -$stroke-width/2;
+  left: -$stroke-width/2;
+}
+
+.stroke--lowercase-vertical--top-right {
+  top: -$stroke-width/2;
+  right: -$stroke-width/2;
 }
 
 .stroke--lowercase-vertical--middle-left {
   top: $lowercase-grid-width - $stroke-width/2;
+  left: -$stroke-width/2;
+}
+
+.stroke--lowercase-vertical--middle-right {
+  top: $lowercase-grid-width - $stroke-width/2;
+  right: -$stroke-width/2;
 }

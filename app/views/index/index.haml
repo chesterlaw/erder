@@ -5,7 +5,7 @@
 
   %br
 
-  - ("a".."c").each do |character|
+  - ('a'..'d').each do |character|
     %a{href: "lowercase_#{character}"}
       = render :file => "index/lowercase_#{character}"
 
