@@ -69,3 +69,7 @@
   top: $lowercase-grid-width/2 - $stroke-width/2;
   left: $lowercase-grid-width/2 - $stroke-width/2;
 }
+
+.stroke.stroke--lowercase-dot--right {
+  left: $lowercase-grid-width - $stroke-width/2;
+}
