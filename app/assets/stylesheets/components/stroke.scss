@@ -61,3 +61,11 @@
   bottom: -$stroke-width/2;
   left: $grid-width/2 - $stroke-width/2;
 }
+
+.stroke--lowercase-dot {
+  width: $stroke-width;
+  height: $stroke-width;
+  border-radius: 50%;
+  top: $lowercase-grid-width/2 - $stroke-width/2;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+}
