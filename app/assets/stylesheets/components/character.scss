@@ -5,3 +5,8 @@
   opacity: $letter-opacity;
   // Don't add a border to this, otherwise will mess up C and O.
 }
+
+.character--lowercase {
+  width: $grid-width/2;
+  height: $grid-width/2*3;
+}

@@ -32,3 +32,12 @@ $stroke-width-ratio: $stroke-width/$grid-width;
   border-color: transparent $stroke-color transparent transparent;
   transform: rotate(45deg);
 }
+
+.stroke--circle--lowercase-circle {
+  width: $lowercase-grid-width - $stroke-width;
+  height: $lowercase-grid-width - $stroke-width;
+}
+
+.stroke--circle--lowercase-circle--middle {
+  top: $lowercase-grid-width - $stroke-width/2;
+}

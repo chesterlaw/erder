@@ -1,0 +1,7 @@
+.stroke--lowercase-quadrant-border-middle-q4-right {
+  width: $stroke-width;
+  height: $lowercase-grid-width/2 + $stroke-width/2;
+  position: absolute;
+  top: $lowercase-grid-width + $lowercase-grid-width/2;
+  right: -$stroke-width/2;
+}
