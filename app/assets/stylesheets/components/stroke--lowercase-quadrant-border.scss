@@ -1,24 +1,54 @@
-.stroke.stroke--lowercase-quadrant-border-middle-q1-top {
+// Top square quadrant borders
+.stroke--lowercase-quadrant-border-top-q3-right {
+  width: $stroke-width;
+  height: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width/2;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+}
+
+// Middle square quadrant borders
+.stroke--lowercase-quadrant-border-middle-q1-top {
   height: $stroke-width;
   width: $lowercase-grid-width/2 + $stroke-width/2;
   top: $lowercase-grid-width - $stroke-width/2;
   right: -$stroke-width/2;    
 }
 
-.stroke.stroke--lowercase-quadrant-border-middle-q1-bottom {
+.stroke--lowercase-quadrant-border-middle-q1-bottom {
   height: $stroke-width;
   width: $lowercase-grid-width/2;
   top: $lowercase-grid-width - $stroke-width/2 + $lowercase-grid-width/2;
   right: 0;
 }
 
-.stroke.stroke--lowercase-quadrant-border-middle-q2-bottom {
+.stroke--lowercase-quadrant-border-middle-q1-left {
+  width: $stroke-width;
+  height: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width - $stroke-width/2;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+}
+
+.stroke--lowercase-quadrant-border-middle-q2-top {
+  height: $stroke-width;
+  width: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width - $stroke-width/2;
+  left: -$stroke-width/2;    
+}
+
+.stroke--lowercase-quadrant-border-middle-q2-bottom {
   height: $stroke-width;
   width: $lowercase-grid-width/2;
   top: $lowercase-grid-width - $stroke-width/2 + $lowercase-grid-width/2;
 }
 
-.stroke.stroke--lowercase-quadrant-border-middle-q4-bottom {
+.stroke--lowercase-quadrant-border-middle-q3-right {
+  width: $stroke-width;
+  height: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width*1.5;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+}
+
+.stroke--lowercase-quadrant-border-middle-q4-bottom {
   height: $stroke-width;
   width: $lowercase-grid-width/2 + $stroke-width/2;
   top: $lowercase-grid-width*2 - $stroke-width/2;
@@ -29,5 +59,13 @@
   width: $stroke-width;
   height: $lowercase-grid-width/2 + $stroke-width/2;
   top: $lowercase-grid-width + $lowercase-grid-width/2;
+  right: -$stroke-width/2;
+}
+
+// Bottom square quadrant borders
+.stroke--lowercase-quadrant-border-bottom-q1-right {
+  width: $stroke-width;
+  height: $lowercase-grid-width/2 + $stroke-width/2;
+  bottom: $lowercase-grid-width/2;
   right: -$stroke-width/2;
 }

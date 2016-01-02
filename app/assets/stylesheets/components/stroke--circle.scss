@@ -41,3 +41,12 @@ $stroke-width-ratio: $stroke-width/$grid-width;
 .stroke--circle--lowercase-circle--middle {
   top: $lowercase-grid-width - $stroke-width/2;
 }
+
+.stroke--circle--lowercase-circle--bottom {
+  top: $lowercase-grid-width*2 - $stroke-width/2;
+}
+
+.stroke--circle--lowercase-circle--bottom--q3-q4 {
+  border-color: transparent $stroke-color $stroke-color transparent;
+  transform: rotate(45deg);
+}
