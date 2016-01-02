@@ -19,3 +19,14 @@
   top: $lowercase-grid-width*1.5 + $stroke-width/2;
   right: -$stroke-width/2;
 }
+
+.character--lowercase-e__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  background: blue;
+  top: $lowercase-grid-width*2 - $stroke-width/2;
+  right: 0;
+  margin-top: -2.06rem;
+  margin-right: 0.22rem;
+  transform: rotate(45deg);
+}
