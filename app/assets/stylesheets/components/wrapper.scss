@@ -1,0 +1,9 @@
+.wrapper {
+  margin: 5rem auto;
+  width: $grid-width;
+}
+
+.wrapper--lowercase {
+  width: $grid-width/2;
+  height: $grid-width/2*3;
+}

@@ -18,23 +18,3 @@ a {
 div, body {
   box-sizing: border-box;
 }
-
-.wrapper {
-  margin: 5rem auto;
-  width: $grid-width;
-}
-
-.grid {
-  position: absolute;
-  width: $grid-width;
-  height: $grid-width;
-  opacity: $grid-opacity;
-}
-
-.character {
-  width: $grid-width;
-  height: $grid-width;
-  position: relative;
-  opacity: $letter-opacity;
-  // Don't add a border to this, otherwise will mess up C and O.
-}

@@ -1,5 +1,9 @@
 @import 'base/universal.scss';
 
+@import 'components/character.scss';
+@import 'components/grid.scss';
+@import 'components/mask.scss';
+@import 'components/previous-and-next-button.scss';
 @import 'components/stroke.scss';
 @import 'components/stroke--diagonal.scss';
 @import 'components/stroke--half-diagonal.scss';
@@ -8,8 +12,7 @@
 @import 'components/stroke--oval.scss';
 @import 'components/stroke--quadrant-border.scss';
 @import 'components/stroke--quadrant-half-border.scss';
-@import 'components/mask.scss';
-@import 'components/previous-and-next-button.scss';
+@import 'components/wrapper.scss';
 
 @import 'trumps/index.scss';
 @import 'trumps/a.scss';
@@ -23,6 +26,6 @@
 @import 'trumps/5.scss';
 @import 'trumps/6.scss';
 @import 'trumps/9.scss';
-@import 'trumps/question-mark.scss';
 @import 'trumps/at-sign.scss';
 @import 'trumps/percent-sign.scss';
+@import 'trumps/question-mark.scss';

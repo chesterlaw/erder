@@ -1,0 +1,11 @@
+.grid {
+  position: absolute;
+  width: $grid-width;
+  height: $grid-width;
+  opacity: $grid-opacity;
+}
+
+.grid--lowercase {
+  width: $grid-width/2;
+  height: $grid-width/2*3;
+}
