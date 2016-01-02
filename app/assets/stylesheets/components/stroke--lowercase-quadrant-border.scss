@@ -62,6 +62,13 @@
   left: $lowercase-grid-width/2 - $stroke-width/2;
 }
 
+.stroke--lowercase-quadrant-border-middle-q3-bottom {
+  height: $stroke-width;
+  width: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width*2 - $stroke-width/2;
+  left: -$stroke-width/2;
+}
+
 .stroke--lowercase-quadrant-border-middle-q4-bottom {
   height: $stroke-width;
   width: $lowercase-grid-width/2 + $stroke-width/2;
