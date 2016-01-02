@@ -1,0 +1,15 @@
+.stroke.character--lowercase--t__curve {
+  width: $lowercase-grid-width/2 - $stroke-width;
+  height: $lowercase-grid-width/2 - $stroke-width;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+  top: $lowercase-grid-width*1.5 - $stroke-width/2;
+  border-color: transparent $stroke-color $stroke-color transparent;
+  transform: rotate(45deg);
+}
+
+.stroke.character--lowercase--t__bridge {
+  width: $stroke-width;
+  height: $lowercase-grid-width/4;
+  top: $lowercase-grid-width*1.5;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+}
