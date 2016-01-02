@@ -8,6 +8,11 @@
   left: -$stroke-width/2;
 }
 
+.stroke--lowercase-vertical--top-middle {
+  top: -$stroke-width/2;
+  left: $lowercase-grid-width/2 - $stroke-width/2;
+}
+
 .stroke--lowercase-vertical--top-right {
   top: -$stroke-width/2;
   right: -$stroke-width/2;
