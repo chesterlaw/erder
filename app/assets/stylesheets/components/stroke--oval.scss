@@ -1,7 +1,6 @@
 .stroke--oval {
   width: $grid-width - $stroke-width;
   height: $grid-width - $stroke-width*2;
-  position: absolute;
   background: none;
   border-radius: 50%;
   border: $stroke-width solid $stroke-color;
@@ -33,4 +32,12 @@
 
 .stroke--oval--bottom {
   top: -$stroke-width + $grid-width/4;
+}
+
+// Lowercase usage
+.stroke--oval--lowercase {
+  width: $lowercase-grid-width - $stroke-width;
+  height: $lowercase-grid-width - $stroke-width*2;
+  $amount-to-reset: -$stroke-width;
+  top: $amount-to-reset + $lowercase-grid-width - $lowercase-grid-width/4;
 }
