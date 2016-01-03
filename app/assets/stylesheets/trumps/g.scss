@@ -26,14 +26,15 @@
 .character--g__cap {
   height: $stroke-width;
   width: $stroke-width/2;
-  position: absolute;
 }
 
 .character--g__cap--top {
-  background: blue;
-  $translation-amount: 0.109*$grid-width;
-  top: $translation-amount;
-  right: $translation-amount;
+  $y: $grid-width/2*sin(45deg);
+  $x: $grid-width/2*cos(45deg);
+  $y-edit: $stroke-width/4 * sin(45deg);
+  $x-edit: $stroke-width/4 * cos(45deg);
+  top: $grid-width/2 - $stroke-width/2 - $y + $y-edit;
+  left: $grid-width/2 - $stroke-width/4 + $x + $x-edit;
   transform: rotate(-135deg);
 }
 
