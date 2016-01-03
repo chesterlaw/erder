@@ -1,0 +1,6 @@
+.character--v__cap {
+  width: $stroke-width;
+  height: $stroke-width*2;
+  left: $grid-width/2 - $stroke-width/2;
+  bottom: -$stroke-width*2;
+}
