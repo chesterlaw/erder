@@ -12,3 +12,10 @@
   top: $lowercase-grid-width/4;
   left: $lowercase-grid-width/2 - $stroke-width/2;
 }
+
+.character--lowercase--f__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  top: -$stroke-width/4 + $lowercase-grid-width/4 + $stroke-width/4;
+  right: -$stroke-width/2;
+}
