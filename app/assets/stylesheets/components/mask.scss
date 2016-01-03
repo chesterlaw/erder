@@ -69,6 +69,12 @@ $amount-to-center: -($half-diagonal-height - $grid-width)/2;
   margin-left: -$stroke-width/2;
 }
 
+.mask--half-diagonal--left--top {
+  $rotation-amount: -26.565051177078deg;
+  $left-compensation: ($stroke-width/2)/sin($rotation-amount);
+  left: $grid-width/4 - $left-compensation;
+}
+
 .mask--half-diagonal--right {
   height: $half-diagonal-height;
   width: $stroke-width;
@@ -102,22 +108,3 @@ $amount-to-center: -($half-diagonal-height - $grid-width)/2;
   $left-compensation: ($stroke-width)/sin($rotation-amount);
   left: $left-center-amount + $left-compensation;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

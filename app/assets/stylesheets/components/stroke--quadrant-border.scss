@@ -42,6 +42,13 @@
   left: -$stroke-width/2;
 }
 
+.stroke--quadrant-border--q2-left--non-full {
+  height: $grid-width/2;
+  width: $stroke-width;
+  top: 0;
+  left: -$stroke-width/2;
+}
+
 .stroke--quadrant-border--q3-bottom {
   height: $stroke-width;
   bottom: -$stroke-width/2;
