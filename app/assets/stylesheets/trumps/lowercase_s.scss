@@ -1,0 +1,14 @@
+.character--lowercase--s__mask {
+  width: $lowercase-grid-width/2 + $stroke-width/2;
+  height: $lowercase-grid-width/4;
+}
+
+.character--lowercase--s__mask--1 {
+  top: $lowercase-grid-width*1.25;
+  right: -$stroke-width/2;
+}
+
+.character--lowercase--s__mask--2 {
+  top: $lowercase-grid-width*1.5;
+  left: -$stroke-width/2;
+}
