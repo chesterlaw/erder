@@ -1,5 +1,10 @@
-.all {
+.index {
   padding: 3rem 2rem;
+
+  & > a {
+    display: inline-block;
+    overflow: hidden;
+  }
 
   .wrapper {
     display: inline-block;
