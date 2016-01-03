@@ -1,11 +1,19 @@
 .wrapper
   = image_tag 'uppercase-grid.png', class: :grid
 
-  .n.character
-    .stroke.stroke--vertical.stroke--vertical--left
-    .stroke.stroke--vertical.stroke--vertical--right
-
-    .stroke.stroke--diagonal.stroke--diagonal--q2-to-bottom-right
+  .character.character--n
     .stroke.stroke--diagonal.stroke--diagonal--q2-to-bottom-right
     .character__bottom-diagonals
-      .stroke.stroke--diagonal.character__bottom-diagonals__q4-to-bottom-right--non-full
+      .stroke.stroke--diagonal.character__bottom-diagonals__q4-to-bottom-right
+    .stroke.character--n__cap--bottom
+
+    .mask.mask--diagonal-to-bottom-right.mask--diagonal-to-bottom-right--bottom
+    
+    .stroke.stroke--vertical.stroke--vertical--left
+
+    .mask.mask--diagonal-to-bottom-right.mask--diagonal-to-bottom-right--top
+
+    .stroke.stroke--vertical.stroke--vertical--right
+
+    .mask.mask--left-side
+    .mask.mask--right-side

@@ -1,0 +1,11 @@
+.character--n__cap--bottom {
+  background: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  $width: $stroke-width*1.5;
+  border-width: 0 $width $width 0;
+  border-color: transparent $stroke-color transparent transparent;
+  bottom: -$width;
+  right: -$stroke-width/2;
+}
