@@ -21,12 +21,13 @@
 }
 
 .character--lowercase-e__cap {
+  transform: rotate(45deg);
   width: $stroke-width;
   height: $stroke-width/2;
-  background: blue;
-  top: $lowercase-grid-width*2 - $stroke-width/2;
-  right: 0;
-  margin-top: -2.06rem;
-  margin-right: 0.22rem;
-  transform: rotate(45deg);
+  $y: $lowercase-grid-width/2*sin(45deg);
+  $x: $lowercase-grid-width/2*cos(45deg);
+  $y-edit: $stroke-width/4 * sin(45deg);
+  $x-edit: $stroke-width/4 * cos(45deg);
+  top: $lowercase-grid-width*1.5 - $stroke-width/4 + $y - $y-edit;
+  left: $lowercase-grid-width/2 - $stroke-width/2 + $x + $x-edit;
 }
