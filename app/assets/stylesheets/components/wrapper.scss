@@ -7,3 +7,8 @@
   width: $grid-width/2;
   height: $grid-width/2*3;
 }
+
+.wrapper--lowercase--double {
+  width: $lowercase-grid-width*2;
+  position: relative;
+}
