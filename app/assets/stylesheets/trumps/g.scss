@@ -7,12 +7,12 @@
   width: 0;
   height: 0;
   border-style: solid;
-  $height: $grid-width/2 - $stroke-width/2;
-  $width: $grid-width/2 - $stroke-width/2;
+  $height: $grid-width/2;
+  $width: $grid-width/2;
   border-width: 0 0 $height $width;
   border-color: transparent transparent $mask-color transparent;
   right: 0;
-  bottom: $grid-width*0.5 + $stroke-width/2;
+  bottom: $grid-width*0.5;
 }
 
 .g--character__mask--right {
@@ -42,5 +42,13 @@
   top: 50%;
   margin-top: -$stroke-width/2;
   left: 50%;
+  margin-left: -$stroke-width/2;
+}
+
+.character--g__cap--right {
+  height: $stroke-width/2;
+  top: 50%;
+  margin-top: -$stroke-width/2;
+  right: -$stroke-width/2;
   margin-left: -$stroke-width/2;
 }
