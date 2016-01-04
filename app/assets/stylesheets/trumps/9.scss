@@ -5,3 +5,10 @@
   top: $grid-width/2;
   left: -$stroke-width/2;
 }
+
+.character--9__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  left: -$stroke-width/2;
+  bottom: $grid-width/4;
+}
