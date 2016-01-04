@@ -38,6 +38,7 @@ class IndexController < ApplicationController
         'right_parenthesis',
         'plus_sign',
         'minus_sign',
+        'forward_slash',
         'question_mark',
       ]
     end
