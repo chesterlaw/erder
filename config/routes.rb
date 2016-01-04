@@ -47,6 +47,7 @@ Rails.application.routes.draw do
   get 'minus_sign', controller: :index
   get 'forward_slash', controller: :index
   get 'question_mark', controller: :index
+  get 'back_slash', controller: :index
   get 'lowercase_a', controller: :index
   get 'lowercase_b', controller: :index
   get 'lowercase_c', controller: :index

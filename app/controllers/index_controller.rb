@@ -40,6 +40,7 @@ class IndexController < ApplicationController
         'minus_sign',
         'forward_slash',
         'question_mark',
+        'back_slash',
       ]
     end
 end
