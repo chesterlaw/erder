@@ -73,3 +73,10 @@
 .stroke.stroke--lowercase-dot--right {
   left: $lowercase-grid-width - $stroke-width/2;
 }
+
+.stroke--lowercase-dunder-cap {
+  height: $stroke-width/2;
+  width: $stroke-width;
+  left: -$stroke-width/2;
+  bottom: $lowercase-grid-width/2;
+}
