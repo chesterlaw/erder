@@ -1,6 +1,7 @@
 .mask--half-diagonal--left {
   $hypotenuse-ratio: 2.2360679775;
-  $half-diagonal-height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width + 600; // last number is addition to height of half-diagonal strokes.
+  $artificial-height-addition: $stroke-width*2;
+  $half-diagonal-height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width + $artificial-height-addition; // last number is addition to height of half-diagonal strokes.
   $amount-to-center: -($half-diagonal-height - $grid-width)/2;
 
   height: $half-diagonal-height;
@@ -13,21 +14,25 @@
   margin-left: -$stroke-width/2;
 
   &.mask--half-diagonal--left--top {
-    $rotation-amount: -26.565051177078deg;
     $left-compensation: ($stroke-width/2)/sin($rotation-amount);
     left: $grid-width/4 - $left-compensation;
   }
 
   &.mask--half-diagonal--left--bottom {
-    $rotation-amount: -26.565051177078deg;
     $left-compensation: ($stroke-width/2)/sin($rotation-amount);
     left: $grid-width/4 + $left-compensation;
+  }
+
+  &.mask--half-diagonal--left--to-left-top {
+    $rotation-amount: 26.565051177078deg;
+    transform: rotate($rotation-amount);
   }
 }
 
 .mask--half-diagonal--right {
   $hypotenuse-ratio: 2.2360679775;
-  $half-diagonal-height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width + 600; // last number is addition to height of half-diagonal strokes.
+  $artificial-height-addition: $stroke-width*2;
+  $half-diagonal-height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width + $artificial-height-addition; // last number is addition to height of half-diagonal strokes.
   $amount-to-center: -($half-diagonal-height - $grid-width)/2;
 
   height: $half-diagonal-height;
@@ -40,15 +45,18 @@
   margin-right: -$stroke-width/2;
 
   &.mask--half-diagonal--right--top {
-    $rotation-amount: 26.565051177078deg;
     $right-compensation: ($stroke-width/2)/sin($rotation-amount);
     right: $grid-width/4 + $right-compensation;
     background: red;
   }
 
   &.mask--half-diagonal--right--bottom {
-    $rotation-amount: 26.565051177078deg;
     $right-compensation: ($stroke-width/2)/sin($rotation-amount);
     right: $grid-width/4 + $right-compensation;
+  }
+
+  &.mask--half-diagonal--right--to-right-top {
+    $rotation-amount: -26.565051177078deg;
+    transform: rotate($rotation-amount);
   }
 }
