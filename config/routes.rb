@@ -37,7 +37,6 @@ Rails.application.routes.draw do
   get '8', controller: :index
   get '9', controller: :index
   get 'exclamation_mark', controller: :index
-  get 'question_mark', controller: :index
   get 'at_sign', controller: :index
   get 'number_sign', controller: :index
   get 'percent_sign', controller: :index
@@ -46,6 +45,7 @@ Rails.application.routes.draw do
   get 'right_parenthesis', controller: :index
   get 'plus_sign', controller: :index
   get 'minus_sign', controller: :index
+  get 'question_mark', controller: :index
   get 'lowercase_a', controller: :index
   get 'lowercase_b', controller: :index
   get 'lowercase_c', controller: :index

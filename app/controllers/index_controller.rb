@@ -28,6 +28,17 @@ class IndexController < ApplicationController
 
   private
     def get_special_characters
-      @special_characters = ['exclamation_mark', 'question_mark', 'at_sign', 'number_sign', 'percent_sign', 'caret', 'left_parenthesis', 'right_parenthesis', 'plus_sign', 'minus_sign']
+      @special_characters = [
+        'exclamation_mark',
+        'at_sign',
+        'number_sign',
+        'percent_sign',
+        'caret',
+        'left_parenthesis',
+        'right_parenthesis',
+        'plus_sign',
+        'minus_sign',
+        'question_mark',
+      ]
     end
 end
