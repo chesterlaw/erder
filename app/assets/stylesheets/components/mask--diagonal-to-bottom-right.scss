@@ -1,0 +1,26 @@
+$hypotenuse-ratio: 2.2360679775;
+$half-diagonal-height: ($grid-width/2)*$hypotenuse-ratio + $stroke-width + 600; // last number is addition to height of half-diagonal strokes.
+$amount-to-center: -($half-diagonal-height - $grid-width)/2;
+
+.mask--diagonal-to-bottom-right {
+  $height: $grid-width*3;
+  width: $stroke-width;
+  height: $height;
+  $rotation-amount: -45deg;
+  transform: rotate($rotation-amount);
+  top: -($height - $grid-width)/2;
+}
+
+.mask--diagonal-to-bottom-right--top {
+  $rotation-amount: -45deg;
+  $left-center-amount: $grid-width/2 - $stroke-width/2;
+  $left-compensation: ($stroke-width)/sin($rotation-amount);
+  left: $left-center-amount - $left-compensation;
+}
+
+.mask--diagonal-to-bottom-right--bottom {
+  $rotation-amount: -45deg;
+  $left-center-amount: $grid-width/2 - $stroke-width/2;
+  $left-compensation: ($stroke-width)/sin($rotation-amount);
+  left: $left-center-amount + $left-compensation;
+}

@@ -1,0 +1,35 @@
+.mask--top-side {
+  $width: $grid-width*2;
+  $height: $stroke-width;
+  height: $height;
+  width: $width;
+  left: -($width - $grid-width)/2;
+  top: -$height - $stroke-width/2;
+}
+
+.mask--right-side {
+  $height: $grid-width*2;
+  $width: $stroke-width;
+  height: $height;
+  width: $width;
+  right: -$width - $stroke-width/2;
+  top: -($height - $grid-width)/2;
+}
+
+.mask--bottom-side {
+  $width: $grid-width*2;
+  $height: $stroke-width;
+  height: $height;
+  width: $width;
+  left: -($width - $grid-width)/2;
+  bottom: -$height - $stroke-width/2;
+}
+
+.mask--left-side {
+  $height: $grid-width*2;
+  $width: $stroke-width;
+  height: $height;
+  width: $width;
+  left: -$width - $stroke-width/2;
+  top: -($height - $grid-width)/2;
+}

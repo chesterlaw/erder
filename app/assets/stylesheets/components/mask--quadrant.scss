@@ -1,0 +1,13 @@
+.mask--quadrant {
+  height: $grid-width/2 - $stroke-width;
+  width: $grid-width/2 - $stroke-width/2;
+  left: $stroke-width/2;
+}
+
+.mask--quadrant--q2 {
+  top: $stroke-width/2;
+}
+
+.mask--quadrant--q3 {
+  bottom: $stroke-width/2;
+}
