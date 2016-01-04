@@ -1,0 +1,27 @@
+.character--number-sign__vertical-1 {
+  width: $stroke-width;
+  height: $grid-width + $stroke-width;
+  top: -$stroke-width/2;
+  left: $grid-width/3 - $stroke-width/2;
+}
+
+.character--number-sign__vertical-2 {
+  width: $stroke-width;
+  height: $grid-width + $stroke-width;
+  top: -$stroke-width/2;
+  right: $grid-width/3 - $stroke-width/2;
+}
+
+.character--number-sign__horizontal-1 {
+  width: $grid-width + $stroke-width;
+  height: $stroke-width;
+  left: -$stroke-width/2;
+  top: $grid-width/3 - $stroke-width/2;
+}
+
+.character--number-sign__horizontal-2 {
+  width: $grid-width + $stroke-width;
+  height: $stroke-width;
+  left: -$stroke-width/2;
+  bottom: $grid-width/3 - $stroke-width/2;
+}

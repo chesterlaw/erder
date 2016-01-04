@@ -1,6 +1,10 @@
 class IndexController < ApplicationController
   before_action :get_previous_and_next_character, except: :index
 
+  def index
+    get_special_characters
+  end
+
   def get_previous_and_next_character
     alphabet = ('a' .. 'z').to_a
     characters = ('a' .. 'z').to_a
@@ -10,6 +14,8 @@ class IndexController < ApplicationController
     end
 
     characters += ('0'..'9').to_a
+    get_special_characters
+    characters += @special_characters
 
     hereIndex = characters.index(action_name)
     @previousPage = characters[hereIndex - 1]
@@ -19,4 +25,9 @@ class IndexController < ApplicationController
       @nextPage = characters[0]
     end
   end
+
+  private
+    def get_special_characters
+      @special_characters = ['exclamation_mark', 'question_mark', 'at_sign', 'number_sign', 'percent_sign', 'plus_sign', 'minus_sign', 'caret']
+    end
 end

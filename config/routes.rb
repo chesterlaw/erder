@@ -36,13 +36,14 @@ Rails.application.routes.draw do
   get '7', controller: :index
   get '8', controller: :index
   get '9', controller: :index
-  get 'exclamation_mark', controller: :index, action: :exclamation_mark
-  get 'question_mark', controller: :index, action: :question_mark
-  get 'at_sign', controller: :index, action: :at_sign
-  get 'percent_sign', controller: :index, action: :percent_sign
-  get 'plus_sign', controller: :index, action: :plus_sign
-  get 'minus_sign', controller: :index, action: :minus_sign
-  get 'caret', controller: :index, action: :caret
+  get 'exclamation_mark', controller: :index
+  get 'question_mark', controller: :index
+  get 'at_sign', controller: :index
+  get 'number_sign', controller: :index
+  get 'percent_sign', controller: :index
+  get 'plus_sign', controller: :index
+  get 'minus_sign', controller: :index
+  get 'caret', controller: :index
   get 'lowercase_a', controller: :index
   get 'lowercase_b', controller: :index
   get 'lowercase_c', controller: :index
