@@ -23,7 +23,7 @@ $amount-to-center: -($height - $grid-width)/2;
   transform: rotate(116.565051177078deg);
 }
 
-.stroke--half-diagonal--left {
+.stroke--half-diagonal--left-to-right {
   margin-left: -$stroke-width/2;
   left: 50%;
   top: $amount-to-center;
@@ -31,7 +31,7 @@ $amount-to-center: -($height - $grid-width)/2;
   left: $grid-width/4;
 }
 
-.stroke--half-diagonal--right {
+.stroke--half-diagonal--right-to-left {
   margin-right: -$stroke-width/2;
   top: $amount-to-center;
   transform: rotate(26.565051177078deg);
