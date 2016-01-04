@@ -1,4 +1,4 @@
-.mask--diagonal {
+.mask--diagonal--right-to-left {
   $pythagorean-ratio: 0.41421356237;
   $artificial-height-addition: $stroke-width*2;
   $height: ($grid-width/2)*(1+$pythagorean-ratio) + $stroke-width + $artificial-height-addition;
@@ -11,17 +11,31 @@
   top: $y-at-stroke + $y-addition;
   left: $x-at-stroke;
 
-  &.mask--diagonal--bottom {
+  &.mask--diagonal--right-to-left--bottom {
     $y-at-stroke: -($height - $grid-width/2)/2;
     $x-at-stroke: -$stroke-width/2 + $grid-width*0.75;
     top: $y-at-stroke + $y-addition;
     left: $x-at-stroke;
   }
 
-  &.mask--diagonal--top {
+  &.mask--diagonal--right-to-left--top {
     $y-at-stroke: -($height - $grid-width/2)/2 + $grid-width/2;
     $x-at-stroke: -$stroke-width/2 + $grid-width*0.25;
     top: $y-at-stroke - $y-addition;
     left: $x-at-stroke;
   }
+}
+
+.mask--diagonal--left-to-right--bottom {
+  $pythagorean-ratio: 0.41421356237;
+  $artificial-height-addition: $stroke-width*2;
+  $height: ($grid-width/2)*(1+$pythagorean-ratio) + $stroke-width + $artificial-height-addition;
+  height: $height;
+  width: $stroke-width;
+  transform: rotate(-45deg);
+  $y-at-stroke: -($height - $grid-width/2)/2 + $grid-width/2;
+  $x-at-stroke: -$stroke-width/2 + $grid-width*0.75;
+  $y-addition: ($stroke-width)/sin(45deg);
+  top: $y-at-stroke + $y-addition;
+  left: $x-at-stroke;
 }
