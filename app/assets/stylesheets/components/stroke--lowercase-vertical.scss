@@ -34,7 +34,7 @@
 }
 
 .stroke--lowercase-vertical--bottom-left {
-  bottom: 0;
+  bottom: -$stroke-width/2;
   left: -$stroke-width/2;
 }
 
