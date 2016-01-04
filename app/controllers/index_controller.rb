@@ -9,6 +9,8 @@ class IndexController < ApplicationController
       characters << 'lowercase_' + letter
     end
 
+    characters += ('0'..'9').to_a
+
     hereIndex = characters.index(action_name)
     @previousPage = characters[hereIndex - 1]
     @nextPage = characters[hereIndex + 1]
