@@ -1,5 +1,27 @@
+.mask--lowercase-side--middle-top {
+  width: $lowercase-grid-width + $stroke-width;
+  height: $stroke-width;
+  top: $lowercase-grid-width*1 - $stroke-width*1.5;
+  left: -$stroke-width/2;
+}
+
+.mask--lowercase-side--middle-right {
+  height: $lowercase-grid-width + $stroke-width;
+  width: $stroke-width;
+  top: $lowercase-grid-width - $stroke-width/2;
+  right: -$stroke-width*1.5;
+}
+
 .mask--lowercase-side--middle-bottom {
-  width: $lowercase-grid-width;
+  width: $lowercase-grid-width + $stroke-width;
   height: $stroke-width;
   top: $lowercase-grid-width*2 + $stroke-width/2;
+  left: -$stroke-width/2;
+}
+
+.mask--lowercase-side--middle-left {
+  height: $lowercase-grid-width + $stroke-width;
+  width: $stroke-width;
+  top: $lowercase-grid-width - $stroke-width/2;
+  left: -$stroke-width*1.5;
 }
