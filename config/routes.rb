@@ -41,9 +41,9 @@ Rails.application.routes.draw do
   get 'at_sign', controller: :index
   get 'number_sign', controller: :index
   get 'percent_sign', controller: :index
+  get 'caret', controller: :index
   get 'plus_sign', controller: :index
   get 'minus_sign', controller: :index
-  get 'caret', controller: :index
   get 'lowercase_a', controller: :index
   get 'lowercase_b', controller: :index
   get 'lowercase_c', controller: :index
