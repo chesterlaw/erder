@@ -1,14 +1,22 @@
 @import 'base/universal.scss';
 @import 'tools/trigonometric-functions.scss';
 
+// Base components
 @import 'components/character.scss';
 @import 'components/grid.scss';
+@import 'components/wrapper.scss';
+@import 'components/previous-and-next-button.scss';
+
+// Mask
 @import 'components/mask.scss';
 @import 'components/mask--half-diagonal.scss';
 @import 'components/mask--quadrant.scss';
 @import 'components/mask--sides.scss';
 @import 'components/mask--diagonal-to-bottom-right.scss';
-@import 'components/previous-and-next-button.scss';
+@import 'components/mask--lowercase-half-diagonal.scss';
+@import 'components/mask--lowercase-side.scss';
+
+// Stroke
 @import 'components/stroke.scss';
 @import 'components/stroke--diagonal.scss';
 @import 'components/stroke--lowercase-diagonal.scss';
@@ -20,8 +28,8 @@
 @import 'components/stroke--oval.scss';
 @import 'components/stroke--quadrant-border.scss';
 @import 'components/stroke--quadrant-half-border.scss';
-@import 'components/wrapper.scss';
 
+// Trumps for each character
 @import 'trumps/index.scss';
 @import 'trumps/a.scss';
 @import 'trumps/g.scss';

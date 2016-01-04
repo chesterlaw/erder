@@ -1,0 +1,41 @@
+.mask--lowercase-half-diagonal--middle-left {
+  $hypotenuse-ratio: 2.2360679775;
+  $half-diagonal-height: ($lowercase-grid-width/2)*$hypotenuse-ratio + $stroke-width + 600; // last number is addition to height of half-diagonal strokes.
+  $amount-to-center: -($half-diagonal-height - $lowercase-grid-width)/2 + $lowercase-grid-width;
+
+  height: $half-diagonal-height;
+  width: $stroke-width;
+  $rotation-amount: -26.565051177078deg;
+  transform: rotate($rotation-amount);
+  top: $amount-to-center;
+  $left-compensation: ($stroke-width/2)/sin($rotation-amount);
+  left: $lowercase-grid-width/4 + $left-compensation;
+  margin-left: -$stroke-width/2;
+
+  &.mask--lowercase-half-diagonal--middle-left--bottom {
+    $rotation-amount: -26.565051177078deg;
+    $left-compensation: ($stroke-width/2)/sin($rotation-amount);
+    left: $lowercase-grid-width/4 + $left-compensation;
+  }
+}
+
+.mask--lowercase-half-diagonal--middle-right {
+  $hypotenuse-ratio: 2.2360679775;
+  $half-diagonal-height: ($lowercase-grid-width/2)*$hypotenuse-ratio + $stroke-width + 600; // last number is addition to height of half-diagonal strokes.
+  $amount-to-center: -($half-diagonal-height - $lowercase-grid-width)/2 + $lowercase-grid-width;
+
+  height: $half-diagonal-height;
+  width: $stroke-width;
+  $rotation-amount: 26.565051177078deg;
+  transform: rotate($rotation-amount);
+  top: $amount-to-center;
+  $right-compensation: ($stroke-width/2)/sin($rotation-amount);
+  right: $lowercase-grid-width/4 - $right-compensation;
+  margin-right: -$stroke-width/2;
+
+  &.mask--lowercase-half-diagonal--middle-right--bottom {
+    $rotation-amount: 26.565051177078deg;
+    $right-compensation: ($stroke-width/2)/sin($rotation-amount);
+    right: $lowercase-grid-width/4 - $right-compensation;
+  }
+}
