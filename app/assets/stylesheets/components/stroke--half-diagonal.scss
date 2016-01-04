@@ -23,6 +23,13 @@ $amount-to-center: -($height - $grid-width)/2;
   transform: rotate(116.565051177078deg);
 }
 
+.stroke--half-diagonal--left-to-left {
+  margin-right: -$stroke-width/2;
+  top: $amount-to-center;
+  transform: rotate(26.565051177078deg);
+  left: $grid-width/4 - $stroke-width/2;
+}
+
 .stroke--half-diagonal--left-to-right {
   margin-left: -$stroke-width/2;
   left: 50%;
@@ -36,6 +43,13 @@ $amount-to-center: -($height - $grid-width)/2;
   top: $amount-to-center;
   transform: rotate(26.565051177078deg);
   right: $grid-width/4;
+}
+
+.stroke--half-diagonal--right-to-right {
+  margin-left: -$stroke-width/2;
+  top: $amount-to-center;
+  transform: rotate(-26.565051177078deg);
+  right: $grid-width/4 - $stroke-width/2;
 }
 
 .stroke--half-diagonal--lowercase-top {
