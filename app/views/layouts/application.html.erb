@@ -8,10 +8,12 @@
 </head>
 <body>
 
-<div class='buttons'>
-  <button class='previous-button'>Prev</button>
-  <button class='next-button'>Next</button>
-</div>
+<% if action_name != 'index' %>
+  <div class='buttons'>
+    <a href='<%= @previousPage %>' class='previous-button'>Prev</a>
+    <a href='<%= @nextPage %>' class='next-button'>Next</a>
+  </div>
+<% end %>
 
 <%= yield %>
 
