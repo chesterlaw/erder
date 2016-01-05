@@ -1,0 +1,23 @@
+.character--4__vertical {
+  height: $grid-width + $stroke-width;
+  width: $stroke-width;
+  left: -$stroke-width/2 + $grid-width*0.666666666666;
+  top: -$stroke-width/2;
+}
+
+.character--4__horizontal {
+  width: $grid-width + $stroke-width;
+  height: $stroke-width;
+  left: -$stroke-width/2;
+  top: $grid-width/2 - $stroke-width/2;
+}
+
+.character--4__diagonal {
+  $pythagorean-ratio: 1.666666666666665;
+  $height: $pythagorean-ratio*($grid-width/2) + $stroke-width;
+  height: $height;
+  width: $stroke-width;
+  transform: rotate(53.130102342221deg);
+  top: -($height - $grid-width/2)/2;
+  left: $grid-width/3 - $stroke-width/2;
+}
