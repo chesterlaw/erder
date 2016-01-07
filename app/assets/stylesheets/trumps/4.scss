@@ -1,7 +1,7 @@
 .character--4__vertical {
   height: $grid-width + $stroke-width;
   width: $stroke-width;
-  left: -$stroke-width/2 + $grid-width*0.666666666666;
+  left: -$stroke-width/2 + $grid-width*2/3;
   top: -$stroke-width/2;
 }
 
@@ -9,15 +9,40 @@
   width: $grid-width + $stroke-width;
   height: $stroke-width;
   left: -$stroke-width/2;
-  top: $grid-width/2 - $stroke-width/2;
+  top: $grid-width*2/3 - $stroke-width/2;
 }
 
 .character--4__diagonal {
-  $pythagorean-ratio: 1.666666666666665;
-  $height: $pythagorean-ratio*($grid-width/2) + $stroke-width;
-  height: $height;
   width: $stroke-width;
-  transform: rotate(53.130102342221deg);
-  top: -($height - $grid-width/2)/2;
-  left: $grid-width/3 - $stroke-width/2;
+  $height: 2/3*$grid-width/sin(45deg) + $stroke-width;
+  height: $height;
+  transform: rotate(45deg);
+  top: -$height/2 + $grid-width/3;
+  left: -$stroke-width/2 + $grid-width/3;
+}
+
+.character--4__horizontal-mask {
+  width: $grid-width/2 + $stroke-width/2;
+  height: $stroke-width;
+  top: $grid-width*2/3 + $stroke-width/2;
+  left: -$stroke-width/2;
+}
+
+.character--4__vertical-mask {
+  height: $grid-width/2 + $stroke-width/2;
+  width: $stroke-width;
+  top: -$stroke-width/2;
+  left: $grid-width*2/3 + $stroke-width/2;
+}
+
+.character--4__diagonal-mask {
+  width: $stroke-width;
+  $mask-additional-height: $stroke-width*3;
+  $height: 2/3*$grid-width/sin(45deg) + $stroke-width + $mask-additional-height;
+  height: $height;
+  transform: rotate(45deg);
+  $y-to-mask: $stroke-width*2*sin(45deg);
+  $x-to-mask: $stroke-width*2*cos(45deg);
+  top: -$height/2 + $grid-width/3;
+  left: -$stroke-width/2 + $grid-width/3 - $x-to-mask;
 }
