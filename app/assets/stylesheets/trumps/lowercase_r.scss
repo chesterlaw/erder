@@ -11,3 +11,10 @@
   top: $lowercase-grid-width - $stroke-width/2;
   left: -$stroke-width/2;
 }
+
+.character--lowercase--r__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  right: -$stroke-width/2;
+  top: $lowercase-grid-width*1.25;
+}
