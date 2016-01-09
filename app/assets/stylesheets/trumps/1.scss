@@ -6,9 +6,27 @@
   .character--1__diagonal-stroke {
     width: $stroke-width;
     height: $height;
-    position: absolute;
     left: $grid-width/4 - $stroke-width/2;
-    top: -$grid-width/4 + $stroke-width/2;
+    top: -$height/2 + $grid-width/8;
     transform: rotate(-116.565051177078deg);
+  }
+
+  .character--1__vertical-mask {
+    width: $stroke-width;
+    height: $grid-width/2 + $stroke-width/2;
+    top: -$stroke-width/2;
+    left: $grid-width/2 + $stroke-width/2;
+  }
+
+  .character--1__diagonal-mask {
+    $degrees-to-rotate: -116.565051177078deg;
+    $additional-height: $stroke-width*2;
+    $height: ($grid-width/4)*$hypotenuse-ratio + $stroke-width + $additional-height;
+    transform: rotate($degrees-to-rotate);    
+    width: $stroke-width;
+    height: $height;
+    $top-change: $stroke-width/2/cos($degrees-to-rotate);
+    top: -$height/2 + $grid-width/8 + $top-change;
+    left: $grid-width/4 - $stroke-width/2;
   }
 }
