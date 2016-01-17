@@ -1,44 +1,42 @@
-.character--s {
-  .character--s__mask {
-    width: $grid-width/2 + $stroke-width/2;
-    height: $grid-width/4;
-    position: absolute;
-  }
+.character--s__mask {
+  width: $grid-width/2 + $stroke-width/2;
+  height: $grid-width/4;
+  position: absolute;
+}
 
-  .character--s__mask--1 {
-    right: -$stroke-width/2;
-    top: $grid-width/4;
-  }
+.character--s__mask--1 {
+  right: -$stroke-width/2;
+  top: $grid-width/4;
+}
 
-  .character--s__mask--2 {
-    left: -$stroke-width/2;
-    top: $grid-width/2;
-  }
+.character--s__mask--2 {
+  left: -$stroke-width/2;
+  top: $grid-width/2;
+}
 
-  .character--s__cap {
-    width: $stroke-width;
-    height: $stroke-width/2;
-    position: absolute;
-  }
+.character--s__cap {
+  width: $stroke-width;
+  height: $stroke-width/2;
+  position: absolute;
+}
 
-  .character--s__cap--top {
-    right: -$stroke-width/2;
-    top: $grid-width/4;
-  }
+.character--s__cap--top {
+  right: -$stroke-width/2;
+  top: $grid-width/4;
+}
 
-  .character--s__cap--bottom {
-    left: -$stroke-width/2;
-    bottom: $grid-width/4;
-  }
+.character--s__cap--bottom {
+  left: -$stroke-width/2;
+  bottom: $grid-width/4;
+}
 
-  .character--s__oval-container {
-    overflow: hidden;
-    position: absolute;
-    height: $grid-width/2 + $stroke-width/2;
-    width: $grid-width/2;
+.character--s__oval-container {
+  overflow: hidden;
+  position: absolute;
+  height: $grid-width/2 + $stroke-width/2;
+  width: $grid-width/2;
+}
 
-    .character--s__oval {
-      top: -$grid-width/2 + $stroke-width*1.5;
-    }
-  }
+.character--s__oval-container__oval {
+  top: -$grid-width/2 + $stroke-width*1.5;
 }
