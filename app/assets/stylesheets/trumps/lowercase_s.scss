@@ -27,3 +27,15 @@
   left: -$stroke-width/2;
   bottom: $lowercase-grid-width*1.25;
 }
+
+.character--lowercase-s__oval-container {
+  overflow: hidden;
+  height: $lowercase-grid-width;
+  width: $lowercase-grid-width/2;
+  position: absolute;
+  top: $lowercase-grid-width;
+}
+
+.character--lowercase-s__oval-container__oval {
+  top: -$lowercase-grid-width/2 + $stroke-width - $stroke-width*0.75;
+}
