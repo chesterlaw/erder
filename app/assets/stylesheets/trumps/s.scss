@@ -30,4 +30,15 @@
     left: -$stroke-width/2;
     bottom: $grid-width/4;
   }
+
+  .character--s__oval-container {
+    overflow: hidden;
+    position: absolute;
+    height: $grid-width/2 + $stroke-width/2;
+    width: $grid-width/2;
+
+    .character--s__oval {
+      top: -$grid-width/2 + $stroke-width*1.5;
+    }
+  }
 }
