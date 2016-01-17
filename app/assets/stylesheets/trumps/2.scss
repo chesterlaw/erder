@@ -29,3 +29,16 @@
   bottom: $stroke-width/2;
   left: $stroke-width/2;
 }
+
+.character--2__oval-container {
+  overflow: hidden;
+  position: absolute;
+  height: $grid-width/2 + $stroke-width/2;
+  width: $grid-width/2;
+  left: $grid-width/2;
+}
+
+.character--2__oval-container__oval {
+  top: -$grid-width/2 + $stroke-width*1.5;
+  left: -$grid-width/2 - $stroke-width/2;
+}
