@@ -8,15 +8,16 @@
 
   .wrapper {
     display: inline-block;
-    margin: -11.5rem;
-    transform: scale(0.25);
+    margin: -0.38*$grid-width;
+    transform: scale(0.15);
   }
 
   .wrapper--lowercase {
-    margin: -18.5rem -5.2rem;
+    margin: -0.59*$grid-width -0.18*$grid-width;
   }
 
   .wrapper--lowercase--double {
-    margin: -18.5rem -11.5rem;
+    margin-left: -0.39*$grid-width;
+    margin-right: -0.39*$grid-width;
   }
 }
