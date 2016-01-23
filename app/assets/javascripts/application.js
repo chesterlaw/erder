@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require turbolinks
+
+$(document).ready(function() {
+  $('.preview-button').on('click', function() {
+    $('.grid').css('opacity', 0);
+    $('.mask').css('opacity', 1);
+    $('.character').css('opacity', 1);
+  });
+});
