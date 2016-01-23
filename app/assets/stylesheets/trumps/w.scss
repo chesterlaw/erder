@@ -1,5 +1,4 @@
 .character--w {
-  $quarter-hypotenuse-ratio: 1.0307764064;
   $rotation-amount: 14.036243461deg;
   $right-compensation: $stroke-width*cos($rotation-amount);
   $top-compensation: $stroke-width*sin($rotation-amount);
