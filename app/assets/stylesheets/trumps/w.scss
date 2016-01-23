@@ -1,0 +1,52 @@
+.character--w {
+  $quarter-hypotenuse-ratio: 1.0307764064;
+  $rotation-amount: 14.036243461deg;
+  $right-compensation: $stroke-width*cos($rotation-amount);
+  $top-compensation: $stroke-width*sin($rotation-amount);
+
+  .mask--quarter-diagonal {
+    width: $stroke-width;
+    height: $stroke-width;
+    transform: rotate(-$rotation-amount);
+  }
+
+  .mask--quarter-diagonal--1 {
+    bottom: -$stroke-width/2 - $top-compensation;
+    left: $grid-width/4 - $stroke-width/2 - $right-compensation;
+  }
+
+  .mask--quarter-diagonal--2 {
+    bottom: -$stroke-width/2 - $top-compensation;
+    left: $grid-width/4 - $stroke-width/2 + $right-compensation;
+    transform: rotate($rotation-amount);
+  }
+
+  .mask--quarter-diagonal--3 {
+    transform: rotate($rotation-amount);
+    top: -$stroke-width/2 - $top-compensation;
+    left: $grid-width/2 - $stroke-width/2 - $right-compensation;
+  }
+
+  .mask--quarter-diagonal--4 {
+    top: -$stroke-width/2 - $top-compensation;
+    left: $grid-width/2 - $stroke-width/2 + $right-compensation;
+  }
+
+  .mask--quarter-diagonal--5 {
+    bottom: -$stroke-width/2 - $top-compensation;
+    right: $grid-width/4 - $stroke-width/2 + $right-compensation;
+  }
+
+  .mask--quarter-diagonal--6 {
+    transform: rotate($rotation-amount);
+    bottom: -$stroke-width/2 - $top-compensation;
+    right: $grid-width/4 - $stroke-width/2 - $right-compensation;
+  }
+
+  .character--w__top-center-cap {
+    height: $stroke-width;
+    width: $stroke-width;
+    top: -$stroke-width*1.5;
+    left: $grid-width/2 - $stroke-width/2;
+  }
+}
