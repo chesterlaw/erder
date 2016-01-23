@@ -1,3 +1,62 @@
-.character--lowercase--w__right {
-  margin-left: $lowercase-grid-width;
+.character--lowercase--w {
+  .character--lowercase--w__right {
+    margin-left: $lowercase-grid-width;
+  }
+
+  .character--lowercase--w__mask-bottom-side {
+    height: $stroke-width;
+    width: $lowercase-grid-width*2;
+    top: $lowercase-grid-width*2 + $stroke-width/2;
+  }
+
+  // Masks
+  $rotation-amount: -26.565051177078deg;
+  $right-compensation: $stroke-width*cos($rotation-amount);
+  $top-compensation: $stroke-width*sin($rotation-amount);
+
+  .character--lowercase--w__diagonal-mask {
+    width: $stroke-width;
+    height: $stroke-width;
+    transform: rotate($rotation-amount);
+  }
+
+  .character--lowercase--w__diagonal-mask--1 {
+    top: $lowercase-grid-width*2 - $stroke-width/2 - $top-compensation;
+    left: $lowercase-grid-width/2 - $stroke-width/2 - $right-compensation;
+  }
+
+  .character--lowercase--w__diagonal-mask--2 {
+    transform: rotate(-$rotation-amount);
+    top: $lowercase-grid-width*2 - $stroke-width/2 - $top-compensation;
+    left: $lowercase-grid-width/2 - $stroke-width/2 + $right-compensation;
+  }
+
+  .character--lowercase--w__diagonal-mask--3 {
+    transform: rotate(-$rotation-amount);
+    top: $lowercase-grid-width - $stroke-width/2 + $top-compensation;
+    left: $lowercase-grid-width - $stroke-width/2 - $right-compensation;
+  }
+
+  .character--lowercase--w__diagonal-mask--4 {
+    top: $lowercase-grid-width - $stroke-width/2 + $top-compensation;
+    left: $lowercase-grid-width - $stroke-width/2 + $right-compensation;
+  }
+
+  .character--lowercase--w__diagonal-mask--5 {
+    top: $lowercase-grid-width*2 - $stroke-width/2 - $top-compensation;
+    left: $lowercase-grid-width*1.5 - $stroke-width/2 - $right-compensation;
+  }
+
+  .character--lowercase--w__diagonal-mask--6 {
+    transform: rotate(-$rotation-amount);
+    top: $lowercase-grid-width*2 - $stroke-width/2 - $top-compensation;
+    left: $lowercase-grid-width*1.5 - $stroke-width/2 + $right-compensation;
+  }
+
+  .character--lowercase-w__top-center-cap {
+    width: $stroke-width;
+    height: $stroke-width;
+    left: $lowercase-grid-width - $stroke-width/2;
+    top: $lowercase-grid-width - $stroke-width*1.5;
+  }
 }
