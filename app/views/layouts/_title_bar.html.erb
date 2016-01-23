@@ -1,0 +1,14 @@
+<div class='title-bar'>
+  <button class='title-bar__button title-bar__button--preview'>Preview</button>
+
+  <div class='title-bar__title'>
+    <%= link_to 'Erder', root_path, class: 'title-bar__title__link' %>
+  </div>
+
+  <% if action_name != 'index' %>
+    <div class='title-bar__nav-buttons'>
+      <a href='<%= @nextPage %>' class='title-bar__button'>Next</a>
+      <a href='<%= @previousPage %>' class='title-bar__button'>Prev</a>
+    </div>
+  <% end %>
+</div>

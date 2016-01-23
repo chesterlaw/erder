@@ -16,7 +16,7 @@
 //= require turbolinks
 
 $(document).ready(function() {
-  $('.preview-button').on('click', function() {
+  $('.title-bar__button--preview').on('click', function() {
     $('.grid').css('opacity', 0);
     $('.mask').css('opacity', 1);
     $('.character').css('opacity', 1);

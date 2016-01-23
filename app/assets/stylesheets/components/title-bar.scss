@@ -1,0 +1,45 @@
+.title-bar {
+  background: black;
+  padding: 0.4rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.title-bar__button {
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 0.3rem;
+  margin: 0;
+  border: 0;
+  color: black;
+}
+
+.title-bar__button--preview {
+  float: left;
+  width: 10%;
+}
+
+.title-bar__title {
+  width: 80%;
+  float: left;
+  text-align: center;
+}
+
+.title-bar__title__link {
+  margin: 0;
+  line-height: 1;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.title-bar__nav-buttons {
+  float: right;
+  width: 10%;
+
+  .title-bar__button {
+    float: right;
+  }
+}
