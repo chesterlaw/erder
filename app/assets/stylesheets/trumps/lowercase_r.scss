@@ -18,3 +18,17 @@
   right: -$stroke-width/2;
   top: $lowercase-grid-width*1.25;
 }
+
+.character--lowercase--r__oval-container {
+  position: absolute;
+  height: $lowercase-grid-width/2 - $stroke-width*0.75;
+  width: $lowercase-grid-width/2 + $stroke-width/2;
+  top: $lowercase-grid-width - $stroke-width/2;
+  left: $lowercase-grid-width/2;
+  overflow: hidden;
+}
+
+.character--lowercase--r__oval-container__oval {
+  top: -$lowercase-grid-width/4 - $stroke-width/2;
+  left: -$lowercase-grid-width/2 - $stroke-width/2;
+}
