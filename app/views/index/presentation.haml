@@ -10,20 +10,16 @@
 
   .character-group.character-group--capitals
     - ('a'..'z').each do |character|
-      = link_to character do
-        = render :file => "index/#{character}"
+      .character-group__character= render :file => "index/#{character}"
 
   .character-group.character-group--lowercase-letters
     - ('a'..'z').each do |character|
-      %a{href: "lowercase_#{character}"}
-        = render :file => "index/lowercase_#{character}"
+      .character-group__character= render :file => "index/lowercase_#{character}"
 
   .character-group.character-group--numbers
     - (0..9).each do |character|
-      = link_to character.to_s do
-        = render :file => "index/#{character}"
+      .character-group__character= render :file => "index/#{character}"
 
   .character-group.character-group--special-characters
     - @special_characters.each do |character|
-      = link_to character.to_s do
-        = render :file => "index/#{character}"
+      .character-group__character= render :file => "index/#{character}"
