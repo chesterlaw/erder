@@ -8,7 +8,9 @@
 </head>
 <body>
 
-<%= render partial: 'layouts/title_bar' %>
+<% unless @no_title_bar %>
+  <%= render partial: 'layouts/title_bar' %>
+<% end %>
 
 <%= yield %>
 

@@ -1,8 +1,13 @@
 class IndexController < ApplicationController
-  before_action :get_previous_and_next_character, except: :index
+  before_action :get_previous_and_next_character, except: [:index, :presentation]
 
   def index
     get_special_characters
+  end
+
+  def presentation
+    get_special_characters
+    @no_title_bar = true
   end
 
   def get_previous_and_next_character

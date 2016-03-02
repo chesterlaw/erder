@@ -1,0 +1,54 @@
+.presentation {
+  width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0 4rem;
+  text-align: center;
+
+  .grid { opacity: 0; }
+  .mask { opacity: 1; }
+  .character { opacity: 1; }
+
+  h1 {
+    .wrapper {
+      margin: -0.43*$grid-width -0.46*$grid-width;
+      transform: scale(0.07);
+    }
+  }
+
+  .presentation__paragraphs {
+    text-align: left;
+    font-family: 'Avenir Next', 'Avenir', 'Futura', 'Helvetica', 'Arial', sans-serif;
+    text-indent: 1.5rem;
+    line-height: 1.5rem;
+
+    p {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .character-group__character {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .character-group {
+    margin-top: 0.8rem;
+    margin-bottom: 5rem;
+  }
+
+  .wrapper {
+    display: inline-block;
+    margin: -0.43*$grid-width;
+    transform: scale(0.10);
+  }
+
+  .wrapper--lowercase {
+    margin: -0.67*$grid-width -0.21*$grid-width;
+  }
+
+  .wrapper--lowercase--double {
+    $side-margin: -0.436*$grid-width;
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+  }
+}
