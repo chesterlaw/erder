@@ -10,17 +10,20 @@
 
   h1 {
     .wrapper {
-      margin: -0.43*$grid-width -0.45*$grid-width;
+      margin: -0.43*$grid-width -0.46*$grid-width;
       transform: scale(0.07);
     }
-    margin-bottom: 0;
   }
 
-  p {
+  .presentation__paragraphs {
+    padding-bottom: 1rem;
     text-align: left;
-    margin-top: 0;
     font-family: "Avenir Next";
     text-indent: 1.5rem;
+
+    p {
+      padding-bottom: 1rem;
+    }
   }
 
   .character-group {

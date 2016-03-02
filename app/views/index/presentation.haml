@@ -1,11 +1,12 @@
 .presentation
-  %h1
+  %h1.title
     - 'erder'.split('').each do |character|
       = render :file => "index/#{character}"
 
-  %p With Erder, I primarily wanted to create a geometric typeface that was unarbitrary. I wanted to see what would result from a font that had as few design decisions as possible, and the choices that had to be made, were done in the spirit of, "Well, of course it had to be this way!"
 
-  %p I would describe Erder as a geometric, unarbitrary, and therefore grid-based typeface.
+  .presentation__paragraphs
+    %p With Erder, I primarily wanted to create a geometric typeface that was unarbitrary. I wanted to see what would result from a font that had as few design decisions as possible, and the choices that had to be made, were done in the spirit of, "Well, of course it had to be this way!"
+    %p I would describe Erder as a geometric, unarbitrary, and therefore grid-based typeface.
 
   .character-group.character-group--capitals
     - ('a'..'z').each do |character|
