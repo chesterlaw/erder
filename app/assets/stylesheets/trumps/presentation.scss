@@ -9,6 +9,8 @@
   .character { opacity: 1; }
 
   h1 {
+    overflow: hidden;
+
     .wrapper {
       margin: -0.43*$grid-width -0.46*$grid-width;
       transform: scale(0.07);
