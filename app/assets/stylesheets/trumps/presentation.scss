@@ -25,17 +25,20 @@
 
     p {
       padding-bottom: 1.5rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
+  }
+
+  .character-group {
+    margin: 5rem 0;
   }
 
   .character-group__character {
     display: inline-block;
     overflow: hidden;
-  }
-
-  .character-group {
-    margin-top: 0.8rem;
-    margin-bottom: 5rem;
   }
 
   .wrapper {
