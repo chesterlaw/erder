@@ -1,0 +1,19 @@
+.index
+  - ('a'..'z').each do |character|
+    = link_to character do
+      = render :file => "index/#{character}"
+
+  %br
+  - ('a'..'z').each do |character|
+    %a{href: "lowercase_#{character}"}
+      = render :file => "index/lowercase_#{character}"
+
+  %br
+  - (0..9).each do |character|
+    = link_to character.to_s do
+      = render :file => "index/#{character}"
+
+  %br
+  - @special_characters.each do |character|
+    = link_to character.to_s do
+      = render :file => "index/#{character}"
