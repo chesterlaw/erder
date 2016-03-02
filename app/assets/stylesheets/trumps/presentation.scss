@@ -1,6 +1,7 @@
 .presentation {
   width: 900px;
   margin: 0 auto;
+  padding: 1rem 0 4rem;
   text-align: center;
 
   .grid { opacity: 0; }
@@ -22,7 +23,11 @@
     text-indent: 1.5rem;
   }
 
-  & > a {
+  .character-group {
+    margin-bottom: 5rem;
+  }
+
+  a {
     display: inline-block;
     overflow: hidden;
   }
@@ -34,16 +39,12 @@
   }
 
   .wrapper--lowercase {
-    margin: -0.64*$grid-width -0.21*$grid-width;
+    margin: -0.67*$grid-width -0.21*$grid-width;
   }
 
   .wrapper--lowercase--double {
-    $side-margin: -0.41*$grid-width;
+    $side-margin: -0.436*$grid-width;
     margin-left: $side-margin;
     margin-right: $side-margin;
-  }
-
-  .capital-letters {
-    margin-bottom: 1rem;
   }
 }
