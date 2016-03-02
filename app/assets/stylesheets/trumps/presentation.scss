@@ -1,0 +1,29 @@
+.presentation {
+  width: 900px;
+  margin: 0 auto;
+
+  .grid { opacity: 0; }
+  .mask { opacity: 1; }
+  .character { opacity: 1; }
+
+  & > a {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    display: inline-block;
+    margin: -0.43*$grid-width;
+    transform: scale(0.10);
+  }
+
+  .wrapper--lowercase {
+    margin: -0.64*$grid-width -0.21*$grid-width;
+  }
+
+  .wrapper--lowercase--double {
+    $side-margin: -0.41*$grid-width;
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+  }
+}

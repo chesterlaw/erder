@@ -7,6 +7,7 @@ class IndexController < ApplicationController
 
   def presentation
     get_special_characters
+    @no_title_bar = true
   end
 
   def get_previous_and_next_character
