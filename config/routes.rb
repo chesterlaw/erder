@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'index#index'
-  get 'presentation', controller: :index
+  root 'index#presentation'
+  get 'index', controller: :index
 
   get 'a', controller: :index
   get 'b', controller: :index
