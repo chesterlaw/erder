@@ -40,7 +40,6 @@
   width: $lowercase-grid-width - $stroke-width;
   height: $lowercase-grid-width - $stroke-width*2;
   $amount-to-reset: -$stroke-width;
-  top: $amount-to-reset + $lowercase-grid-width - $lowercase-grid-width/4;
 }
 
 .stroke--oval--lowercase--bottom {

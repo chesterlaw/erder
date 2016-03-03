@@ -21,7 +21,7 @@
 
 .character--lowercase--r__oval-container {
   position: absolute;
-  height: $lowercase-grid-width/2 - $stroke-width*0.75;
+  height: $lowercase-grid-width/2;
   width: $lowercase-grid-width/2 + $stroke-width/2;
   top: $lowercase-grid-width - $stroke-width/2;
   left: $lowercase-grid-width/2;
