@@ -6,6 +6,7 @@
   border: $stroke-width solid $stroke-color;
   box-sizing: content-box;
   left: -$stroke-width/2;
+  top: -$stroke-width;
   border-width: $stroke-width*2 $stroke-width $stroke-width*2 $stroke-width;
   transform: scaleY(0.5);
 }
