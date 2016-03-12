@@ -6,7 +6,9 @@
   .presentation__paragraphs
     %p With Erder, I primarily wanted to create a geometric typeface that was unarbitrary. I wanted to see what would result from a typeface that had as few design decisions as possible, and the choices that had to be made, were done in the spirit of, "Well, of course it had to be this way!"
     %p I would describe Erder as a geometric, unarbitrary, and therefore grid-based typeface.
-    %p Erder is implemented in HTML and CSS, because I'm most familiar with these technologies and SCSS variables allow auto-scaling the thickness of strokes. Unfortunately, this also means Erder is not available to download as a TTF for normal use and currently only serves as a visual experiment.
+    %p
+      %span>= link_to 'Erder is implemented in HTML and CSS', 'https://github.com/chesterlaw/erder', target: '_blank'
+      , because I'm most familiar with these technologies and SCSS variables allow auto-scaling the thickness of strokes. Unfortunately, this also means Erder is not available to download as a TTF for normal use and currently only serves as a visual experiment.
 
   .character-group.character-group--capitals
     - ('a'..'z').each do |character|
