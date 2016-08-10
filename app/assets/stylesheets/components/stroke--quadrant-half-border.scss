@@ -38,3 +38,9 @@
   top: $grid-width/2;
   left: $grid-width/2 - $stroke-width/2;
 }
+
+.stroke--quadrant-half-border--q4-right-bottom {
+  height: $grid-width/4 + $stroke-width/2;
+  top: $grid-width*0.75;
+  right: -$stroke-width/2;
+}
